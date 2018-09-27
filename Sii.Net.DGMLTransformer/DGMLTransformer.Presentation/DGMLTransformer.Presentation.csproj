@@ -53,6 +53,7 @@
       <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Dgml.cs" />
+    <Compile Include="Models\DgmlCategory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserControls\DgmlFilters.cs">
@@ -91,6 +92,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControls\DgmlFilters.resx">
+      <DependentUpon>DgmlFilters.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\DgmlSelector.resx">
       <DependentUpon>DgmlSelector.cs</DependentUpon>
     </EmbeddedResource>

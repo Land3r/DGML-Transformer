@@ -28,10 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.DgmlCategoryCheckedListBox = new System.Windows.Forms.CheckedListBox();
+            this.SuspendLayout();
+            // 
+            // DgmlCategoryCheckedListBox
+            // 
+            this.DgmlCategoryCheckedListBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DgmlCategoryCheckedListBox.FormattingEnabled = true;
+            this.DgmlCategoryCheckedListBox.Location = new System.Drawing.Point(0, 0);
+            this.DgmlCategoryCheckedListBox.Name = "DgmlCategoryCheckedListBox";
+            this.DgmlCategoryCheckedListBox.Size = new System.Drawing.Size(325, 278);
+            this.DgmlCategoryCheckedListBox.Sorted = true;
+            this.DgmlCategoryCheckedListBox.TabIndex = 0;
+            // 
+            // DgmlFilters
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.DgmlCategoryCheckedListBox);
+            this.Name = "DgmlFilters";
+            this.Size = new System.Drawing.Size(325, 278);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.CheckedListBox DgmlCategoryCheckedListBox;
     }
 }

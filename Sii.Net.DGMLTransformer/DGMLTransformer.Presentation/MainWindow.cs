@@ -15,9 +15,18 @@ namespace DGMLTransformer.Presentation
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+
             var DgmlSelectorControl = new UserControls.DgmlSelector();
+            DgmlSelectorControl.Dock = DockStyle.Fill;
             var DgmlFiltersControl = new UserControls.DgmlFilters();
+            DgmlFiltersControl.Dock = DockStyle.Fill;
             var DgmlGeneratorControl = new UserControls.DgmlGenerator();
+            DgmlGeneratorControl.Dock = DockStyle.Fill;
             DgmlSelectorPanel.Controls.Add(DgmlSelectorControl);
             DgmlFiltersPanel.Controls.Add(DgmlFiltersControl);
             DgmlGeneratorPanel.Controls.Add(DgmlGeneratorControl);

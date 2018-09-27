@@ -10,7 +10,7 @@
     /// <summary>
     /// Service for manipulating DGMLfiles.
     /// </summary>
-    public class DgmlService
+    public class DgmlService : IDgmlService
     {
         /// <summary>
         /// Initalizes a new instance of the <see cref="DgmlService"/> class.

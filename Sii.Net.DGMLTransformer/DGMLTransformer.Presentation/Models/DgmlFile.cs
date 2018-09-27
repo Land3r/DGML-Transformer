@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace DGMLTransformer.Presentation.Models
 {
-    public class Dgml
+    public class DgmlFile
     {
         public string FilePath { get; set; }
         public string FileName { get; set; }
 
-        public Dgml()
+        public DgmlFile()
         {
 
         }

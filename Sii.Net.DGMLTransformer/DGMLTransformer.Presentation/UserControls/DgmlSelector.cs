@@ -8,37 +8,63 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DGMLTransformer.Presentation.Models;
+using DGMLTransformer.Presentation.Events;
 
 namespace DGMLTransformer.Presentation.UserControls
 {
+    /// <summary>
+    /// DgmlSelector user control.
+    /// Used to display a way for the user to select his dgml file.
+    /// </summary>
     public partial class DgmlSelector : UserControl
     {
-        public Dgml MyDgml = new Dgml();
+        /// <summary>
+        /// Event handler for when the user selects a dgml file.
+        /// </summary>
+        public event EventHandler<DgmlFileEventArgs> DgmlFileSelected;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DgmlSelector"/> class.
+        /// </summary>
         public DgmlSelector()
         {
             InitializeComponent();
+
+            DgmlFileSelected += new EventHandler<DgmlFileEventArgs>(this.OnDgmlFileSelected);
         }
 
+        /// <summary>
+        /// Event receiver for when the user clicks on the 'Select file' button
+        /// </summary>
+        /// <param name="sender">The event sender.</param>
+        /// <param name="e">The event payload.</param>
         private void DgmlSelectorButton_Click(object sender, EventArgs e)
         {
-            // Displays an OpenFileDialog so the user can select a Dgml.  
-            OpenFileDialog openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.Multiselect = false;
-            openFileDialog1.Filter = "Dgml Files|*.dgml";
-            openFileDialog1.Title = "Select a Dgml File";
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Multiselect = false;
+            openFileDialog.Filter = "Dgml Files|*.dgml";
+            openFileDialog.Title = "Select a Dgml File";
 
-            // Show the Dialog.  
-            // If the user clicked OK in the dialog and  
-            // a .CUR file was selected, open it.  
-            if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                MyDgml.FileName = openFileDialog1.SafeFileName;
-                MyDgml.FilePath = openFileDialog1.FileName;
+                DgmlFile dgmlFile = new DgmlFile();
+                dgmlFile.FileName = openFileDialog.SafeFileName;
+                dgmlFile.FilePath = openFileDialog.FileName;
 
-                SelectedDgmlName.Text = MyDgml.FileName;
-                // Assign the dgml in the Stream to the Form's Cursor property.  
-                //this.dgml = new Dgml(openFileDialog1.OpenFile());
+                this.DgmlFileSelected?.Invoke(this, new DgmlFileEventArgs(DgmlFileEventEnum.Selected, dgmlFile));
+            }
+        }
+
+        /// <summary>
+        /// Event receiver for the DgmlFileSelected event.
+        /// </summary>
+        /// <param name="sender">the event sender.</param>
+        /// <param name="e">The event payload.</param>
+        private void OnDgmlFileSelected(object sender, DgmlFileEventArgs e)
+        {
+            if (e.Type == DgmlFileEventEnum.Selected)
+            {
+                SelectedDgmlName.Text = e.DgmlFile.FileName;
             }
         }
     }

@@ -38,8 +38,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="ToolsLib">
-      <HintPath>C:\Users\YDEFLAND\Dev\ExternalLibs\ToolsLib.dll</HintPath>
+    <Reference Include="ToolsLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalLibs\ToolsLib.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

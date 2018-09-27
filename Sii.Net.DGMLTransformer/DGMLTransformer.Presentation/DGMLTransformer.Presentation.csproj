@@ -142,6 +142,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DgmlLib\DgmlLib.csproj">
+      <Project>{3A49C4CB-91A4-40E1-8C13-1D94D843FC05}</Project>
+      <Name>DgmlLib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DGMLTransformer.Services\DGMLTransformer.Services.csproj">
       <Project>{0106108D-D643-4A65-B709-F80B8DA297D4}</Project>
       <Name>DGMLTransformer.Services</Name>

@@ -1,4 +1,7 @@
-﻿using DGMLTransformer.Presentation.UserControls;
+﻿using DgmlApi;
+using DGMLTransformer.Presentation.Events;
+using DGMLTransformer.Presentation.UserControls;
+using DGMLTransformer.Services.Dgml;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,6 +21,24 @@ namespace DGMLTransformer.Presentation
     public partial class MainWindow : Form
     {
         /// <summary>
+        /// The <see cref="DgmlService"/> service.
+        /// </summary>
+        private IDgmlService dgmlService;
+
+        /// <summary>
+        /// The <see cref="DgmlDoc"/> instance the window is working on.
+        /// </summary>
+        private DgmlDoc dgmlDoc;
+
+        /// <summary>
+        /// Gets the <see cref="DgmlDoc"/> of the window.
+        /// </summary>
+        public DgmlDoc DgmlDoc
+        {
+            get { return dgmlDoc; }
+        }
+
+        /// <summary>
         /// The <see cref="DgmlSelector"/> user control.
         /// </summary>
         private DgmlSelector dgmlSelector { get; set; }
@@ -35,14 +56,20 @@ namespace DGMLTransformer.Presentation
         /// <summary>
         /// Initalizes a new instance of the <see cref="MainWindow"/> class.
         /// </summary>
-        public MainWindow()
+        /// <param name="dgmlService">Instance of the <see cref="DgmlService"/> service, injected by Unity.</param>
+        public MainWindow(IDgmlService dgmlService)
         {
             InitializeComponent();
 
+            this.dgmlService = dgmlService;
+
             this.dgmlSelector = new DgmlSelector();
             this.dgmlSelector.Dock = DockStyle.Fill;
+            this.dgmlSelector.DgmlFileSelected += new EventHandler<DgmlFileEventArgs>(this.OnDgmlFileSelected);
+
             this.dgmlFilters = new DgmlFilters();
             this.dgmlFilters.Dock = DockStyle.Fill;
+
             this.dgmlGenerator = new DgmlGenerator();
             this.dgmlGenerator.Dock = DockStyle.Fill;
         }
@@ -59,5 +86,20 @@ namespace DGMLTransformer.Presentation
             this.DgmlFiltersPanel.Controls.Add(this.dgmlFilters);
             this.DgmlGeneratorPanel.Controls.Add(this.dgmlGenerator);
         }
+
+        /// <summary>
+        /// Event receiver for the <see cref="DgmlFileEventArgs"/> event.
+        /// </summary>
+        /// <param name="sender">The event sender.</param>
+        /// <param name="e">The event payload.</param>
+        protected void OnDgmlFileSelected(object sender, DgmlFileEventArgs e)
+        {
+            if (e.Type == DgmlFileEventEnum.Selected)
+            {
+                this.dgmlDoc = dgmlService.GetFromFile(e.DgmlFile.FilePath);
+            }
+        }
+
+
     }
 }

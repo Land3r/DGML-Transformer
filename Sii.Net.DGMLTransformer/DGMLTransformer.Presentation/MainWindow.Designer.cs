@@ -29,12 +29,19 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.DgmlSelectorPanel = new System.Windows.Forms.Panel();
+            this.DgmlFiltersPanel = new System.Windows.Forms.Panel();
+            this.DgmlGeneratorPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.DgmlSelectorPanel, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.DgmlFiltersPanel, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.DgmlGeneratorPanel, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -44,6 +51,31 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
             this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            // 
+            // DgmlSelectorPanel
+            // 
+            this.DgmlSelectorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DgmlSelectorPanel.Location = new System.Drawing.Point(3, 3);
+            this.DgmlSelectorPanel.Name = "DgmlSelectorPanel";
+            this.DgmlSelectorPanel.Size = new System.Drawing.Size(794, 40);
+            this.DgmlSelectorPanel.TabIndex = 0;
+            // 
+            // DgmlFiltersPanel
+            // 
+            this.DgmlFiltersPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DgmlFiltersPanel.Location = new System.Drawing.Point(3, 49);
+            this.DgmlFiltersPanel.Name = "DgmlFiltersPanel";
+            this.DgmlFiltersPanel.Size = new System.Drawing.Size(794, 343);
+            this.DgmlFiltersPanel.TabIndex = 1;
+            // 
+            // DgmlGeneratorPanel
+            // 
+            this.DgmlGeneratorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DgmlGeneratorPanel.Location = new System.Drawing.Point(3, 398);
+            this.DgmlGeneratorPanel.Name = "DgmlGeneratorPanel";
+            this.DgmlGeneratorPanel.Size = new System.Drawing.Size(794, 49);
+            this.DgmlGeneratorPanel.TabIndex = 2;
             // 
             // MainWindow
             // 
@@ -53,6 +85,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "MainWindow";
             this.Text = "MainWindow";
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -60,5 +93,8 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel DgmlSelectorPanel;
+        private System.Windows.Forms.Panel DgmlFiltersPanel;
+        private System.Windows.Forms.Panel DgmlGeneratorPanel;
     }
 }

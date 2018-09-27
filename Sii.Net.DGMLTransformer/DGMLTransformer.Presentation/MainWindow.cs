@@ -29,7 +29,6 @@ namespace DGMLTransformer.Presentation
         /// The <see cref="DgmlDoc"/> instance the window is working on.
         /// </summary>
         private DgmlDoc dgmlDoc;
-
         /// <summary>
         /// Gets the <see cref="DgmlDoc"/> of the window.
         /// </summary>

@@ -46,8 +46,8 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.64557F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.35443F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.43038F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.56962F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
             this.tableLayoutPanel1.TabIndex = 0;
@@ -58,15 +58,15 @@
             this.DgmlSelectorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DgmlSelectorPanel.Location = new System.Drawing.Point(3, 3);
             this.DgmlSelectorPanel.Name = "DgmlSelectorPanel";
-            this.DgmlSelectorPanel.Size = new System.Drawing.Size(794, 40);
+            this.DgmlSelectorPanel.Size = new System.Drawing.Size(794, 51);
             this.DgmlSelectorPanel.TabIndex = 0;
             // 
             // DgmlFiltersPanel
             // 
             this.DgmlFiltersPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DgmlFiltersPanel.Location = new System.Drawing.Point(3, 49);
+            this.DgmlFiltersPanel.Location = new System.Drawing.Point(3, 60);
             this.DgmlFiltersPanel.Name = "DgmlFiltersPanel";
-            this.DgmlFiltersPanel.Size = new System.Drawing.Size(794, 343);
+            this.DgmlFiltersPanel.Size = new System.Drawing.Size(794, 332);
             this.DgmlFiltersPanel.TabIndex = 1;
             // 
             // DgmlGeneratorPanel

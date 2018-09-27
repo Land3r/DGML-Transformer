@@ -15,7 +15,12 @@ namespace DGMLTransformer.Presentation
         public MainWindow()
         {
             InitializeComponent();
-            
+            var DgmlSelectorControl = new UserControls.DgmlSelector();
+            var DgmlFiltersControl = new UserControls.DgmlFilters();
+            var DgmlGeneratorControl = new UserControls.DgmlGenerator();
+            DgmlSelectorPanel.Controls.Add(DgmlSelectorControl);
+            DgmlFiltersPanel.Controls.Add(DgmlFiltersControl);
+            DgmlGeneratorPanel.Controls.Add(DgmlGeneratorControl);
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)

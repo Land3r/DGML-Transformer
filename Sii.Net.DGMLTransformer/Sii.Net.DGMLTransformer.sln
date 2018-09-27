@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DGMLTransformer.Presentation", "DGMLTransformer.Presentation\DGMLTransformer.Presentation.csproj", "{D29CDD79-0448-4429-BA87-C05A6B12F0BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DGMLTransformer.Transversal", "DGMLTransformer.Transversal\DGMLTransformer.Transversal.csproj", "{485EDCF5-0F38-456F-9A92-0A035D51B4EF}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DgmlLib", "DgmlLib\DgmlLib.csproj", "{3A49C4CB-91A4-40E1-8C13-1D94D843FC05}"
 EndProject
 Global
@@ -17,6 +19,10 @@ Global
 		{D29CDD79-0448-4429-BA87-C05A6B12F0BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D29CDD79-0448-4429-BA87-C05A6B12F0BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D29CDD79-0448-4429-BA87-C05A6B12F0BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{485EDCF5-0F38-456F-9A92-0A035D51B4EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{485EDCF5-0F38-456F-9A92-0A035D51B4EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{485EDCF5-0F38-456F-9A92-0A035D51B4EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{485EDCF5-0F38-456F-9A92-0A035D51B4EF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3A49C4CB-91A4-40E1-8C13-1D94D843FC05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3A49C4CB-91A4-40E1-8C13-1D94D843FC05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A49C4CB-91A4-40E1-8C13-1D94D843FC05}.Release|Any CPU.ActiveCfg = Release|Any CPU

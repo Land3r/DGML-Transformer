@@ -28,10 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.DgmlSelectorButton = new System.Windows.Forms.Button();
+            this.SelectedDgmlName = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // DgmlSelectorButton
+            // 
+            this.DgmlSelectorButton.Location = new System.Drawing.Point(16, 12);
+            this.DgmlSelectorButton.Name = "DgmlSelectorButton";
+            this.DgmlSelectorButton.Size = new System.Drawing.Size(111, 33);
+            this.DgmlSelectorButton.TabIndex = 0;
+            this.DgmlSelectorButton.Text = "Select DGML";
+            this.DgmlSelectorButton.UseVisualStyleBackColor = true;
+            this.DgmlSelectorButton.Click += new System.EventHandler(this.DgmlSelectorButton_Click);
+            // 
+            // SelectedDgmlName
+            // 
+            this.SelectedDgmlName.AutoSize = true;
+            this.SelectedDgmlName.Location = new System.Drawing.Point(156, 22);
+            this.SelectedDgmlName.Name = "SelectedDgmlName";
+            this.SelectedDgmlName.Size = new System.Drawing.Size(160, 13);
+            this.SelectedDgmlName.TabIndex = 1;
+            this.SelectedDgmlName.Text = "Aucun fichier DGML sélectionné";
+            // 
+            // DgmlSelector
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.SelectedDgmlName);
+            this.Controls.Add(this.DgmlSelectorButton);
+            this.Name = "DgmlSelector";
+            this.Size = new System.Drawing.Size(853, 55);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button DgmlSelectorButton;
+        private System.Windows.Forms.Label SelectedDgmlName;
     }
 }

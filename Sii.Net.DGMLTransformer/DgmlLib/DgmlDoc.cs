@@ -63,7 +63,12 @@ namespace DgmlApi
             }
         }
         #endregion
-        
+
+        private IList<Category> _categories = new List<Category>();
+        public IList<Category> Categories
+        {
+            get { return _categories; }
+        }
 
 
         private XDocument _xdoc = null;
@@ -76,7 +81,6 @@ namespace DgmlApi
         /// </summary>
         private int _aliasCounter = 1000;
 
-        
         /// <summary>
         /// Path Id="adff5a07-75ca-4654-84f5-bfdc5d44298e.OutputPathUri" Value="file:///P:/SVN_IOR_ECO/PLN/PLN/bin/Debug/PLN.exe"
         /// </summary>
@@ -87,7 +91,6 @@ namespace DgmlApi
         /// </summary>
         private void InitDocHandling()
         {
-            
             // On veut travailler HORS namespace par défaut
             // Pour cela on charge le doc à partir du texte dont on aura supprimé la chaine xmlns="http://schemas.microsoft.com/vs/2009/dgml"
 
@@ -98,6 +101,16 @@ namespace DgmlApi
             _aliasParentEl = _xdoc.GetSingleElement("//IdentifierAliases");
             _nodesParentEl = _xdoc.GetSingleElement("//Nodes");
             _LinksParentEl = _xdoc.GetSingleElement("//Links");
+
+            var categoriesElement = (_xdoc.GetSingleElement("//Categories").Nodes());
+            foreach (XNode categorieNode in categoriesElement)
+            {
+                XElement categorieElement = (XElement)categorieNode;
+                string categoryId = categorieElement.Attribute("Id")?.Value;
+                string categoryLabel = categorieElement.Attribute("Label")?.Value;
+                Category category = new Category() { Id = categoryId, Label = !string.IsNullOrEmpty(categoryLabel) ? categoryLabel : categoryId };
+                this._categories.Add<Category>(category);
+            }
 
             Nodes = _nodesParentEl.GetElements("./Node").Select(e => Node.GetNew(e)).ToArray();
             Links = _LinksParentEl.GetElements("./Link").Select(e => Link.GetNewFromXmlEl(e, Nodes));

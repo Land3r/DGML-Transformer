@@ -124,6 +124,9 @@
     <EmbeddedResource Include="UserControls\DgmlFilters.resx">
       <DependentUpon>DgmlFilters.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\DgmlGenerator.resx">
+      <DependentUpon>DgmlGenerator.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\DgmlSelector.resx">
       <DependentUpon>DgmlSelector.cs</DependentUpon>
     </EmbeddedResource>

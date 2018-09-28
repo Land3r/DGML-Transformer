@@ -33,9 +33,10 @@
             // 
             // SaveButton
             // 
-            this.SaveButton.Location = new System.Drawing.Point(100, 15);
+            this.SaveButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.SaveButton.Location = new System.Drawing.Point(201, 0);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(75, 23);
+            this.SaveButton.Size = new System.Drawing.Size(79, 27);
             this.SaveButton.TabIndex = 0;
             this.SaveButton.Text = "Enregistrer";
             this.SaveButton.UseVisualStyleBackColor = true;
@@ -47,7 +48,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.SaveButton);
             this.Name = "DgmlGenerator";
-            this.Size = new System.Drawing.Size(280, 54);
+            this.Size = new System.Drawing.Size(280, 27);
             this.ResumeLayout(false);
 
         }

@@ -40,6 +40,8 @@
             this.DgmlCategoryCheckedListBox.Size = new System.Drawing.Size(325, 278);
             this.DgmlCategoryCheckedListBox.Sorted = true;
             this.DgmlCategoryCheckedListBox.TabIndex = 0;
+            this.DgmlCategoryCheckedListBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.DgmlCategoryCheckedListBox_ItemCheck);
+            this.DgmlCategoryCheckedListBox.SelectedIndexChanged += new System.EventHandler(this.DgmlCategoryCheckedListBox_SelectedIndexChanged);
             // 
             // DgmlFilters
             // 

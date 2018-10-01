@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DGMLTransformer.Presentation.Models;
+using DgmlApi;
 
 namespace DGMLTransformer.Presentation.UserControls
 {
@@ -20,11 +21,9 @@ namespace DGMLTransformer.Presentation.UserControls
         /// <summary>
         /// Fill the check list with category
         /// </summary>
-        private void FillCheckedListView() {
-            //TODO : A brancher sur la récupération de la liste des categories !
-            IEnumerable<DgmlCategory> categoryList = new List<DgmlCategory>();
+        public void FillCheckedListView(IList<Category> dgmlCategories) {
 
-            foreach (var category in categoryList)
+            foreach (var category in dgmlCategories)
             {
                 this.DgmlCategoryCheckedListBox.Items.Add(category);
             }

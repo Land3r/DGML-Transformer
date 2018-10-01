@@ -41,6 +41,6 @@ namespace DGMLTransformer.Presentation.Events
     /// </summary>
     public enum DgmlFileEventEnum
     {
-        Selected,
+        Selected, Loaded
     }
 }

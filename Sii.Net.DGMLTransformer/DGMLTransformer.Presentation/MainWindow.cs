@@ -36,6 +36,10 @@ namespace DGMLTransformer.Presentation
         {
             get { return dgmlDoc; }
         }
+        /// <summary>
+        /// List of categories
+        /// </summary>
+        public IList<Category> DgmlCategories { get; set; }
 
         /// <summary>
         /// The <see cref="DgmlSelector"/> user control.
@@ -65,6 +69,7 @@ namespace DGMLTransformer.Presentation
             this.dgmlSelector = new DgmlSelector();
             this.dgmlSelector.Dock = DockStyle.Fill;
             this.dgmlSelector.DgmlFileSelected += new EventHandler<DgmlFileEventArgs>(this.OnDgmlFileSelected);
+            this.dgmlSelector.DgmlFileLoaded += new EventHandler<DgmlFileEventArgs>(this.OnDgmlFileLoaded);
 
             this.dgmlFilters = new DgmlFilters();
             this.dgmlFilters.Dock = DockStyle.Fill;
@@ -96,6 +101,20 @@ namespace DGMLTransformer.Presentation
             if (e.Type == DgmlFileEventEnum.Selected)
             {
                 this.dgmlDoc = dgmlService.GetFromFile(e.DgmlFile.FilePath);
+            }
+        }
+
+        /// <summary>
+        /// Event receiver for the <see cref="DgmlFileEventArgs"/> event.
+        /// </summary>
+        /// <param name="sender">The event sender.</param>
+        /// <param name="e">The event payload.</param>
+        protected void OnDgmlFileLoaded(object sender, DgmlFileEventArgs e)
+        {
+            if (e.Type == DgmlFileEventEnum.Loaded)
+            {
+                DgmlCategories = dgmlDoc.Categories;
+                dgmlFilters.FillCheckedListView(DgmlCategories);
             }
         }
 

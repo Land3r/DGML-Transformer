@@ -68,7 +68,6 @@ namespace DgmlLib
             get { return _categories; }
         }
 
-
         private XDocument _xdoc = null;
         private XElement _nodesParentEl = null;
         private XElement _aliasParentEl = null;
@@ -127,9 +126,87 @@ namespace DgmlLib
 
         }
 
+        public void HideAllCategories()
+        {
+            var categoriesElement = _xdoc.GetSingleElement("//Categories").Nodes();
+            foreach (XNode categorieNode in categoriesElement)
+            {
+                XElement categorieElement = (XElement)categorieNode;
+                this.HideCategory(categorieElement);
+            }
+        }
 
+        public void HideCategory(Category category)
+        {
+            var categoriesElement = _xdoc.GetSingleElement("//Categories").Nodes();
+            XElement categorieElement = null;
+            foreach (XNode categorieNode in categoriesElement)
+            {
+                categorieElement = (XElement)categorieNode;
+                if (categorieElement.Attribute("Label")?.Value == category.Label)
+                {
+                    break;
+                }
+            }
+            this.HideCategory(categorieElement);
+        }
 
+        public void HideCategory(XElement category)
+        {
+            if (!string.IsNullOrEmpty(category.Attribute("Visibility")?.Value))
+            {
+                category.Attribute("Visibility").SetValue("Collapsed");
+            }
+            else
+            {
+                category.Add(new XAttribute("Visibility", "Collapsed"));
+            }
+        }
 
+        public void ShowAllCategories()
+        {
+            var categoriesElement = _xdoc.GetSingleElement("//Categories").Nodes();
+            foreach (XNode categorieNode in categoriesElement)
+            {
+                XElement categorieElement = (XElement)categorieNode;
+                this.ShowCategory(categorieElement);
+            }
+        }
+
+        public void ShowCategories(IList<Category> categories)
+        {
+            foreach (Category category in categories)
+            {
+                this.ShowCategory(category);
+            }
+        }
+
+        public void ShowCategory(Category category)
+        {
+            var categoriesElement = _xdoc.GetSingleElement("//Categories").Nodes();
+            XElement categorieElement = null;
+            foreach (XNode categorieNode in categoriesElement)
+            {
+                categorieElement = (XElement)categorieNode;
+                if (categorieElement.Attribute("Label")?.Value == category.Label)
+                {
+                    break;
+                }
+            }
+            this.ShowCategory(categorieElement);
+        }
+
+        public void ShowCategory(XElement category)
+        {
+            if (!string.IsNullOrEmpty(category.Attribute("Visibility")?.Value))
+            {
+                category.Attribute("Visibility").SetValue("Visible");
+            }
+            else
+            {
+                category.Add(new XAttribute("Visibility", "Visible"));
+            }
+        }
 
         public static DgmlDoc GetFromFile(string filePath)
         {
@@ -145,7 +222,6 @@ namespace DgmlLib
             this.InitDocHandling();
         }
         
-
         public void Save(string filePath = null)
         {
             if (string.IsNullOrWhiteSpace(filePath))
@@ -162,7 +238,10 @@ namespace DgmlLib
             docToSave.Save(filePath);
         }
         
-
+        public void SaveOnCurrentFile()
+        {
+            this.Save(LoadedFilePath);
+        }
 
         /// <summary>
         /// initialiser _aliasCounter en fonction des alias attribués

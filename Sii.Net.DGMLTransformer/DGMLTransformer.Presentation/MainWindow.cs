@@ -83,6 +83,7 @@ namespace DGMLTransformer.Presentation
 
             this.dgmlGenerator = new DgmlGenerator();
             this.dgmlGenerator.Dock = DockStyle.Fill;
+            this.dgmlGenerator.EventHandler += new EventHandler<EventArgs>(this.OnDgmlGeneratorSave);
         }
 
         /// <summary>
@@ -111,6 +112,14 @@ namespace DGMLTransformer.Presentation
 
                 this.DgmlDocHandler?.Invoke(this, new DgmlDocEventArgs(DgmlDocEventEnum.Loaded, dgmlDoc));
             }
+        }
+
+        protected void OnDgmlGeneratorSave(object sender, EventArgs e)
+        {
+            // TODO: Save the dgml file with selected categories.
+            this.dgmlDoc.HideAllCategories();
+            this.dgmlDoc.ShowCategories(this.dgmlFilters.DgmlCategories.Select(p => new Category() { Id = p.Id, Label = p.Label }).ToList());
+            this.dgmlDoc.SaveOnCurrentFile();
         }
     }
 }

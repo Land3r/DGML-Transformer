@@ -1,5 +1,6 @@
 ﻿using DgmlApi;
 using DGMLTransformer.Presentation.Events;
+using DGMLTransformer.Presentation.Models;
 using DGMLTransformer.Presentation.UserControls;
 using DGMLTransformer.Services.Dgml;
 using System;
@@ -29,6 +30,7 @@ namespace DGMLTransformer.Presentation
         /// The <see cref="DgmlDoc"/> instance the window is working on.
         /// </summary>
         private DgmlDoc dgmlDoc;
+
         /// <summary>
         /// Gets the <see cref="DgmlDoc"/> of the window.
         /// </summary>
@@ -39,7 +41,7 @@ namespace DGMLTransformer.Presentation
         /// <summary>
         /// List of categories
         /// </summary>
-        public IList<Category> DgmlCategories { get; set; }
+        public IList<DgmlCategory> DgmlCategories { get; set; }
 
         /// <summary>
         /// The <see cref="DgmlSelector"/> user control.
@@ -68,8 +70,7 @@ namespace DGMLTransformer.Presentation
 
             this.dgmlSelector = new DgmlSelector();
             this.dgmlSelector.Dock = DockStyle.Fill;
-            this.dgmlSelector.DgmlFileSelected += new EventHandler<DgmlFileEventArgs>(this.OnDgmlFileSelected);
-            this.dgmlSelector.DgmlFileLoaded += new EventHandler<DgmlFileEventArgs>(this.OnDgmlFileLoaded);
+            this.dgmlSelector.DgmlFileHandler += new EventHandler<DgmlFileEventArgs>(this.OnDgmlFileSelected);
 
             this.dgmlFilters = new DgmlFilters();
             this.dgmlFilters.Dock = DockStyle.Fill;
@@ -101,6 +102,8 @@ namespace DGMLTransformer.Presentation
             if (e.Type == DgmlFileEventEnum.Selected)
             {
                 this.dgmlDoc = dgmlService.GetFromFile(e.DgmlFile.FilePath);
+                this.DgmlCategories = dgmlDoc.Categories.Select(p => new DgmlCategory() { Id=p.Id, Label=p.Label }).ToList();
+                this.dgmlFilters.FillCheckedListView(DgmlCategories);
             }
         }
 
@@ -113,8 +116,7 @@ namespace DGMLTransformer.Presentation
         {
             if (e.Type == DgmlFileEventEnum.Loaded)
             {
-                DgmlCategories = dgmlDoc.Categories;
-                dgmlFilters.FillCheckedListView(DgmlCategories);
+
             }
         }
 

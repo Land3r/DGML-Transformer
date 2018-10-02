@@ -14,6 +14,14 @@ namespace DGMLTransformer.Presentation.UserControls
 {
     public partial class DgmlFilters : UserControl
     {
+        public IList<DgmlCategory> DgmlCategories
+        {
+            get
+            {
+                return this.DgmlCategoryCheckedListBox.CheckedItems.Cast<DgmlCategory>().ToList();
+            }
+        }
+
         public DgmlFilters()
         {
             InitializeComponent();
@@ -21,23 +29,12 @@ namespace DGMLTransformer.Presentation.UserControls
         /// <summary>
         /// Fill the check list with category
         /// </summary>
-        public void FillCheckedListView(IList<Category> dgmlCategories) {
-
-            foreach (var category in dgmlCategories)
+        public void FillCheckedListView(IList<DgmlCategory> dgmlCategories)
+        {
+            foreach (DgmlCategory category in dgmlCategories)
             {
                 this.DgmlCategoryCheckedListBox.Items.Add(category);
             }
-            DgmlCategoryCheckedListBox.Refresh();
-        }
-
-        private void DgmlCategoryCheckedListBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            var selectedCategory = DgmlCategoryCheckedListBox.CheckedItems;
-        }
-
-        private void DgmlCategoryCheckedListBox_ItemCheck(object sender, ItemCheckEventArgs e)
-        {
-            var selectedCategory = DgmlCategoryCheckedListBox.CheckedItems;
         }
     }
 }

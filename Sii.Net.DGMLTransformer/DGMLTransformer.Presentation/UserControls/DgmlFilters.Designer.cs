@@ -36,20 +36,21 @@
             this.DgmlCategoryCheckedListBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DgmlCategoryCheckedListBox.FormattingEnabled = true;
             this.DgmlCategoryCheckedListBox.Location = new System.Drawing.Point(0, 0);
+            this.DgmlCategoryCheckedListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DgmlCategoryCheckedListBox.Name = "DgmlCategoryCheckedListBox";
-            this.DgmlCategoryCheckedListBox.Size = new System.Drawing.Size(325, 278);
+            this.DgmlCategoryCheckedListBox.Size = new System.Drawing.Size(433, 342);
             this.DgmlCategoryCheckedListBox.Sorted = true;
             this.DgmlCategoryCheckedListBox.TabIndex = 0;
-            this.DgmlCategoryCheckedListBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.DgmlCategoryCheckedListBox_ItemCheck);
-            this.DgmlCategoryCheckedListBox.SelectedIndexChanged += new System.EventHandler(this.DgmlCategoryCheckedListBox_SelectedIndexChanged);
+            this.DgmlCategoryCheckedListBox.CheckOnClick = true;
             // 
             // DgmlFilters
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.DgmlCategoryCheckedListBox);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DgmlFilters";
-            this.Size = new System.Drawing.Size(325, 278);
+            this.Size = new System.Drawing.Size(433, 342);
             this.ResumeLayout(false);
 
         }

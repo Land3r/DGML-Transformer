@@ -41,6 +41,14 @@ namespace DGMLTransformer.Presentation.Events
     /// </summary>
     public enum DgmlFileEventEnum
     {
-        Selected, Loaded
+        /// <summary>
+        /// Event emitted when the user selects a Dgml file.
+        /// </summary>
+        Selected,
+
+        /// <summary>
+        /// Event emitted when the dgml file is loaded.
+        /// </summary>
+        Loaded
     }
 }

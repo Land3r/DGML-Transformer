@@ -18,24 +18,10 @@ namespace DGMLTransformer.Presentation.UserControls
     /// </summary>
     public partial class DgmlSelector : UserControl
     {
-
-        private delegate int TestDelegate(string message);
-        
-        private void T(TestDelegate myTestDele)
-        {
-            
-            var intResult = myTestDele("toto");
-
-
-        }
         /// <summary>
         /// Event handler for when the user selects a dgml file.
         /// </summary>
-        public event EventHandler<DgmlFileEventArgs> DgmlFileSelected;
-
-        public event EventHandler<DgmlFileEventArgs> DgmlFileLoaded;
-
-
+        public event EventHandler<DgmlFileEventArgs> DgmlFileHandler;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="DgmlSelector"/> class.
@@ -44,8 +30,7 @@ namespace DGMLTransformer.Presentation.UserControls
         {
             InitializeComponent();
 
-            DgmlFileSelected += new EventHandler<DgmlFileEventArgs>(this.OnDgmlFileSelected);
-            DgmlFileLoaded += new EventHandler<DgmlFileEventArgs>(this.OnDgmlFileLoaded);
+            DgmlFileHandler += new EventHandler<DgmlFileEventArgs>(this.OnDgmlFileSelected);
         }
 
         /// <summary>
@@ -66,13 +51,12 @@ namespace DGMLTransformer.Presentation.UserControls
                 dgmlFile.FileName = openFileDialog.SafeFileName;
                 dgmlFile.FilePath = openFileDialog.FileName;
 
-                this.DgmlFileSelected?.Invoke(this, new DgmlFileEventArgs(DgmlFileEventEnum.Selected, dgmlFile));
-                this.DgmlFileLoaded?.Invoke(this, new DgmlFileEventArgs(DgmlFileEventEnum.Loaded, dgmlFile));
+                this.DgmlFileHandler?.Invoke(this, new DgmlFileEventArgs(DgmlFileEventEnum.Selected, dgmlFile));
             }
         }
 
         /// <summary>
-        /// Event receiver for the DgmlFileSelected event.
+        /// Event receiver for the DgmlFileHandler event.
         /// </summary>
         /// <param name="sender">the event sender.</param>
         /// <param name="e">The event payload.</param>
@@ -82,16 +66,7 @@ namespace DGMLTransformer.Presentation.UserControls
             {
                 SelectedDgmlName.Text = e.DgmlFile.FileName;
             }
-        }
-
-        /// <summary>
-        /// Event receiver for the DgmlFileLoaded event.
-        /// </summary>
-        /// <param name="sender">the event sender.</param>
-        /// <param name="e">The event payload.</param>
-        private void OnDgmlFileLoaded(object sender, DgmlFileEventArgs e)
-        {
-            if (e.Type == DgmlFileEventEnum.Loaded)
+            else if (e.Type == DgmlFileEventEnum.Loaded)
             {
             }
         }

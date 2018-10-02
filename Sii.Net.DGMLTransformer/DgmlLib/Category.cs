@@ -42,10 +42,5 @@ namespace DgmlApi
 
             return (firstCatVal != null && firstCatVal.Equals(catId)) || (GetCategorySubElement(diagObjXElement, catId) != null);
         }
-
-        public override string ToString()
-        {
-            return Label;
-        }
     }
 }

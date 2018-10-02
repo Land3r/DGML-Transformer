@@ -1,4 +1,4 @@
-﻿using DgmlApi;
+﻿using DgmlLib;
 
 namespace DGMLTransformer.Services.Dgml
 {

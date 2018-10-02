@@ -64,10 +64,7 @@ namespace DGMLTransformer.Presentation.UserControls
         {
             if (e.Type == DgmlFileEventEnum.Selected)
             {
-                SelectedDgmlName.Text = e.DgmlFile.FileName;
-            }
-            else if (e.Type == DgmlFileEventEnum.Loaded)
-            {
+                SelectedDgmlName.Text = e.Payload.FileName;
             }
         }
     }

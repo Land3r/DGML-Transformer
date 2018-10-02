@@ -1,4 +1,4 @@
-﻿using DgmlApi;
+﻿using DgmlLib;
 using DGMLTransformer.Presentation.Events;
 using DGMLTransformer.Presentation.Models;
 using DGMLTransformer.Presentation.UserControls;
@@ -59,6 +59,11 @@ namespace DGMLTransformer.Presentation
         private DgmlGenerator dgmlGenerator { get; set; }
 
         /// <summary>
+        /// Event handler for when the dgml doc is loaded.
+        /// </summary>
+        public event EventHandler<DgmlDocEventArgs> DgmlDocHandler;
+
+        /// <summary>
         /// Initalizes a new instance of the <see cref="MainWindow"/> class.
         /// </summary>
         /// <param name="dgmlService">Instance of the <see cref="DgmlService"/> service, injected by Unity.</param>
@@ -74,6 +79,7 @@ namespace DGMLTransformer.Presentation
 
             this.dgmlFilters = new DgmlFilters();
             this.dgmlFilters.Dock = DockStyle.Fill;
+            this.DgmlDocHandler += new EventHandler<DgmlDocEventArgs>(this.dgmlFilters.OnDgmlDocLoaded);
 
             this.dgmlGenerator = new DgmlGenerator();
             this.dgmlGenerator.Dock = DockStyle.Fill;
@@ -101,25 +107,10 @@ namespace DGMLTransformer.Presentation
         {
             if (e.Type == DgmlFileEventEnum.Selected)
             {
-                this.dgmlDoc = dgmlService.GetFromFile(e.DgmlFile.FilePath);
-                this.DgmlCategories = dgmlDoc.Categories.Select(p => new DgmlCategory() { Id=p.Id, Label=p.Label }).ToList();
-                this.dgmlFilters.FillCheckedListView(DgmlCategories);
+                this.dgmlDoc = dgmlService.GetFromFile(e.Payload.FilePath);
+
+                this.DgmlDocHandler?.Invoke(this, new DgmlDocEventArgs(DgmlDocEventEnum.Loaded, dgmlDoc));
             }
         }
-
-        /// <summary>
-        /// Event receiver for the <see cref="DgmlFileEventArgs"/> event.
-        /// </summary>
-        /// <param name="sender">The event sender.</param>
-        /// <param name="e">The event payload.</param>
-        protected void OnDgmlFileLoaded(object sender, DgmlFileEventArgs e)
-        {
-            if (e.Type == DgmlFileEventEnum.Loaded)
-            {
-
-            }
-        }
-
-
     }
 }

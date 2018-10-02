@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DGMLTransformer.Presentation.Models;
-using DgmlApi;
+using DgmlLib;
+using DGMLTransformer.Presentation.Events;
 
 namespace DGMLTransformer.Presentation.UserControls
 {
@@ -29,11 +30,25 @@ namespace DGMLTransformer.Presentation.UserControls
         /// <summary>
         /// Fill the check list with category
         /// </summary>
-        public void FillCheckedListView(IList<DgmlCategory> dgmlCategories)
+        private void FillCheckedListView(IList<DgmlCategory> dgmlCategories)
         {
             foreach (DgmlCategory category in dgmlCategories)
             {
                 this.DgmlCategoryCheckedListBox.Items.Add(category);
+            }
+        }
+
+        /// <summary>
+        /// Event receiver for the <see cref="DgmlDocEventArgs"/> event.
+        /// </summary>
+        /// <param name="sender">The event sender.</param>
+        /// <param name="e">The event payload.</param>
+        public void OnDgmlDocLoaded(object sender, DgmlDocEventArgs e)
+        {
+            if (e.Type == DgmlDocEventEnum.Loaded)
+            {
+                IList<DgmlCategory> dgmlCategories = e.Payload.Categories.Select(p => new DgmlCategory() { Id = p.Id, Label = p.Label }).ToList();
+                this.FillCheckedListView(dgmlCategories);
             }
         }
     }

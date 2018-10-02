@@ -1,6 +1,6 @@
 ﻿namespace DGMLTransformer.Services.Dgml
 {
-    using DgmlApi;
+    using DgmlLib;
     using System;
     using System.Collections.Generic;
     using System.Linq;

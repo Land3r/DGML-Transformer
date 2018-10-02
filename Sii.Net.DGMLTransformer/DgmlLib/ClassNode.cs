@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using GeTools;
 
-namespace DgmlApi
+namespace DgmlLib
 {
     public class ClassNode : Node
     {

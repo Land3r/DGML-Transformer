@@ -34,9 +34,10 @@
             // 
             // DgmlSelectorButton
             // 
-            this.DgmlSelectorButton.Location = new System.Drawing.Point(16, 12);
+            this.DgmlSelectorButton.Location = new System.Drawing.Point(21, 15);
+            this.DgmlSelectorButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DgmlSelectorButton.Name = "DgmlSelectorButton";
-            this.DgmlSelectorButton.Size = new System.Drawing.Size(111, 33);
+            this.DgmlSelectorButton.Size = new System.Drawing.Size(148, 41);
             this.DgmlSelectorButton.TabIndex = 0;
             this.DgmlSelectorButton.Text = "Select DGML";
             this.DgmlSelectorButton.UseVisualStyleBackColor = true;
@@ -45,20 +46,22 @@
             // SelectedDgmlName
             // 
             this.SelectedDgmlName.AutoSize = true;
-            this.SelectedDgmlName.Location = new System.Drawing.Point(156, 22);
+            this.SelectedDgmlName.Location = new System.Drawing.Point(208, 27);
+            this.SelectedDgmlName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SelectedDgmlName.Name = "SelectedDgmlName";
-            this.SelectedDgmlName.Size = new System.Drawing.Size(160, 13);
+            this.SelectedDgmlName.Size = new System.Drawing.Size(210, 17);
             this.SelectedDgmlName.TabIndex = 1;
             this.SelectedDgmlName.Text = "Aucun fichier DGML sélectionné";
             // 
             // DgmlSelector
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.SelectedDgmlName);
             this.Controls.Add(this.DgmlSelectorButton);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DgmlSelector";
-            this.Size = new System.Drawing.Size(853, 55);
+            this.Size = new System.Drawing.Size(1137, 68);
             this.ResumeLayout(false);
             this.PerformLayout();
 

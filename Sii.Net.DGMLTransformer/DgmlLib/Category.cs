@@ -7,7 +7,7 @@ using System.Xml.Linq;
 using GeTools;
 
 
-namespace DgmlApi
+namespace DgmlLib
 {
     public class Category
     {

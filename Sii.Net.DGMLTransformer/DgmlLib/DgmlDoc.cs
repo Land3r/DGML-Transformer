@@ -9,7 +9,7 @@ using GeTools;
 using System.IO;
 
 
-namespace DgmlApi
+namespace DgmlLib
 {
 
     /// <summary>
@@ -17,8 +17,6 @@ namespace DgmlApi
     /// </summary>
     public class DgmlDoc
     {
-
-
         public string LoadedFilePath { get; private set; }
         public string LastSavedFilePath { get; set; }
         

@@ -7,7 +7,7 @@ using System.Xml.Linq;
 using GeTools;
 using System.Text.RegularExpressions;
 
-namespace DgmlApi
+namespace DgmlLib
 {
     public class IdentifierAliases
     {

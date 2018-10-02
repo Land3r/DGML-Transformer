@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using GeTools;
 
-namespace DgmlApi
+namespace DgmlLib
 {
     public abstract class LabeledElement : SingleElement
     {

@@ -74,7 +74,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Events\DgmlDocEventArgs.cs" />
     <Compile Include="Events\DgmlFileEventArgs.cs" />
+    <Compile Include="Events\AGenericEventArgs.cs" />
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -1,4 +1,6 @@
-﻿namespace DGMLTransformer.Presentation.UserControls
+﻿using System;
+
+namespace DGMLTransformer.Presentation.UserControls
 {
     partial class DgmlGenerator
     {
@@ -29,26 +31,42 @@
         private void InitializeComponent()
         {
             this.SaveButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SaveButton
             // 
             this.SaveButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.SaveButton.Location = new System.Drawing.Point(201, 0);
+            this.SaveButton.Location = new System.Drawing.Point(268, 0);
+            this.SaveButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(79, 27);
+            this.SaveButton.Size = new System.Drawing.Size(105, 33);
             this.SaveButton.TabIndex = 0;
             this.SaveButton.Text = "Enregistrer";
             this.SaveButton.UseVisualStyleBackColor = true;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button1.Location = new System.Drawing.Point(163, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "ViewButton";
+            this.button1.Size = new System.Drawing.Size(105, 33);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Visualiser";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.ViewButton_Click);
+            // 
             // DgmlGenerator
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.SaveButton);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DgmlGenerator";
-            this.Size = new System.Drawing.Size(280, 27);
+            this.Size = new System.Drawing.Size(373, 33);
             this.ResumeLayout(false);
 
         }
@@ -56,5 +74,6 @@
         #endregion
 
         private System.Windows.Forms.Button SaveButton;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -29,8 +30,7 @@ namespace DGMLTransformer.Presentation
         /// <summary>
         /// The <see cref="DgmlDoc"/> instance the window is working on.
         /// </summary>
-        private DgmlDoc dgmlDoc;
-
+        private DgmlDoc dgmlDoc = null;
         /// <summary>
         /// Gets the <see cref="DgmlDoc"/> of the window.
         /// </summary>
@@ -38,6 +38,7 @@ namespace DGMLTransformer.Presentation
         {
             get { return dgmlDoc; }
         }
+
         /// <summary>
         /// List of categories
         /// </summary>
@@ -83,7 +84,8 @@ namespace DGMLTransformer.Presentation
 
             this.dgmlGenerator = new DgmlGenerator();
             this.dgmlGenerator.Dock = DockStyle.Fill;
-            this.dgmlGenerator.EventHandler += new EventHandler<EventArgs>(this.OnDgmlGeneratorSave);
+            this.dgmlGenerator.SaveFileventHandler += new EventHandler<EventArgs>(this.OnDgmlGeneratorSave);
+            this.dgmlGenerator.ViewFileEventHandler += new EventHandler<EventArgs>(this.OnDgmlGeneratorView);
         }
 
         /// <summary>
@@ -104,7 +106,7 @@ namespace DGMLTransformer.Presentation
         /// </summary>
         /// <param name="sender">The event sender.</param>
         /// <param name="e">The event payload.</param>
-        protected void OnDgmlFileSelected(object sender, DgmlFileEventArgs e)
+        private void OnDgmlFileSelected(object sender, DgmlFileEventArgs e)
         {
             if (e.Type == DgmlFileEventEnum.Selected)
             {
@@ -114,12 +116,22 @@ namespace DGMLTransformer.Presentation
             }
         }
 
-        protected void OnDgmlGeneratorSave(object sender, EventArgs e)
+        private void OnDgmlGeneratorSave(object sender, EventArgs e)
         {
-            // TODO: Save the dgml file with selected categories.
-            this.dgmlDoc.HideAllCategories();
-            this.dgmlDoc.ShowCategories(this.dgmlFilters.DgmlCategories.Select(p => new Category() { Id = p.Id, Label = p.Label }).ToList());
-            this.dgmlDoc.SaveOnCurrentFile();
+            if (this.dgmlDoc != null)
+            {
+                this.dgmlDoc.HideAllCategories();
+                this.dgmlDoc.ShowCategories(this.dgmlFilters.DgmlCategories.Select(p => new Category() { Id = p.Id, Label = p.Label }).ToList());
+                this.dgmlDoc.SaveOnCurrentFile();
+            }
+        }
+
+        private void OnDgmlGeneratorView(object sender, EventArgs e)
+        {
+            if (this.dgmlDoc != null)
+            {
+                Process.Start(this.dgmlDoc.LoadedFilePath);
+            }
         }
     }
 }

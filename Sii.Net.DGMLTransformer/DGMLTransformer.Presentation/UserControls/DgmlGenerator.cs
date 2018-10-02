@@ -13,9 +13,14 @@ namespace DGMLTransformer.Presentation.UserControls
     public partial class DgmlGenerator : UserControl
     {
         /// <summary>
-        /// Event handler for when the user selects a dgml file.
+        /// Event handler for when the user clicks on save file.
         /// </summary>
-        public event EventHandler<EventArgs> EventHandler;
+        public event EventHandler<EventArgs> SaveFileventHandler;
+
+        /// <summary>
+        /// Envent handler for when the user clicks on view file.
+        /// </summary>
+        public event EventHandler<EventArgs> ViewFileEventHandler;
 
         public DgmlGenerator()
         {
@@ -24,7 +29,12 @@ namespace DGMLTransformer.Presentation.UserControls
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            this.EventHandler?.Invoke(this, e);
+            this.SaveFileventHandler?.Invoke(this, e);
+        }
+
+        private void ViewButton_Click(object sender, EventArgs e)
+        {
+            this.ViewFileEventHandler?.Invoke(this, e);
         }
     }
 }

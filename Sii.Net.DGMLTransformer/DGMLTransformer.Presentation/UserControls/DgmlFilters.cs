@@ -19,7 +19,7 @@ namespace DGMLTransformer.Presentation.UserControls
         {
             get
             {
-                return DgmlCategoryCheckedItem.Select(p => new DgmlCategory() { Id = p.Name, Label = p.Text }).ToList();//this.DgmlCategoryCheckedListView.CheckedItems.Cast<DgmlCategory>().ToList();
+                return DgmlCategoryCheckedItem.Select(p => new DgmlCategory() { Id = p.Name, Label = p.Text }).ToList();
             }
         }
 
@@ -59,6 +59,31 @@ namespace DGMLTransformer.Presentation.UserControls
             {
                 IList<DgmlCategory> dgmlCategories = e.Payload.Categories.Select(p => new DgmlCategory() { Id = p.Id, Label = p.Label }).ToList();
                 this.FillCheckedListView(dgmlCategories);
+            }
+        }
+
+        /// <summary>
+        /// Check or uncheck all items in DgmlCategoryCheckedListView
+        /// </summary>
+        /// <param name="sender">The event sender</param>
+        /// <param name="e">The event payload</param>
+        private void CheckAll_CheckedChanged(object sender, EventArgs e)
+        {
+            if (DgmlCategoryCheckedListView != null)
+            {
+                if (CheckAll.Checked)
+                {
+                    for (int i = 0; i < DgmlCategoryCheckedListView.Items.Count; i++)
+                    {
+                        DgmlCategoryCheckedListView.Items[i].Checked = true;
+                    }
+                }
+                else {
+                    for (int i = 0; i < DgmlCategoryCheckedListView.Items.Count; i++)
+                    {
+                        DgmlCategoryCheckedListView.Items[i].Checked = false;
+                    }
+                }                
             }
         }
     }

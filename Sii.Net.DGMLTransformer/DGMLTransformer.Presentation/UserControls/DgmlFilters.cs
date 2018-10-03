@@ -19,22 +19,32 @@ namespace DGMLTransformer.Presentation.UserControls
         {
             get
             {
-                return this.DgmlCategoryCheckedListBox.CheckedItems.Cast<DgmlCategory>().ToList();
+                return DgmlCategoryCheckedItem.Select(p => new DgmlCategory() { Id = p.Name, Label = p.Text }).ToList();//this.DgmlCategoryCheckedListView.CheckedItems.Cast<DgmlCategory>().ToList();
+            }
+        }
+
+        public IList<ListViewItem> DgmlCategoryCheckedItem
+        {
+            get
+            {
+                return this.DgmlCategoryCheckedListView.CheckedItems.Cast<ListViewItem>().ToList();
             }
         }
 
         public DgmlFilters()
         {
             InitializeComponent();
+            DgmlCategoryCheckedListView.CheckBoxes = true;
         }
         /// <summary>
         /// Fill the check list with category
         /// </summary>
         private void FillCheckedListView(IList<DgmlCategory> dgmlCategories)
         {
-            foreach (DgmlCategory category in dgmlCategories)
+            IList<ListViewItem> dgmlCategoryList = dgmlCategories.OrderBy(p => p.Label).Select(p => new ListViewItem() {Name = p.Id, Text = p.Label }).ToList();
+            foreach (ListViewItem category in dgmlCategoryList)
             {
-                this.DgmlCategoryCheckedListBox.Items.Add(category);
+                this.DgmlCategoryCheckedListView.Items.Add(category);
             }
         }
 

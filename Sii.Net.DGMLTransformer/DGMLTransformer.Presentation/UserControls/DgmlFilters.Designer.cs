@@ -28,35 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.DgmlCategoryCheckedListBox = new System.Windows.Forms.CheckedListBox();
+            this.DgmlCategoryCheckedListView = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
-            // DgmlCategoryCheckedListBox
+            // DgmlCategoryCheckedListView
             // 
-            this.DgmlCategoryCheckedListBox.CheckOnClick = true;
-            this.DgmlCategoryCheckedListBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DgmlCategoryCheckedListBox.FormattingEnabled = true;
-            this.DgmlCategoryCheckedListBox.Location = new System.Drawing.Point(0, 0);
-            this.DgmlCategoryCheckedListBox.Margin = new System.Windows.Forms.Padding(4);
-            this.DgmlCategoryCheckedListBox.Name = "DgmlCategoryCheckedListBox";
-            this.DgmlCategoryCheckedListBox.Size = new System.Drawing.Size(433, 342);
-            this.DgmlCategoryCheckedListBox.Sorted = true;
-            this.DgmlCategoryCheckedListBox.TabIndex = 0;
+            this.DgmlCategoryCheckedListView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DgmlCategoryCheckedListView.Location = new System.Drawing.Point(0, 0);
+            this.DgmlCategoryCheckedListView.Name = "DgmlCategoryCheckedListView";
+            this.DgmlCategoryCheckedListView.Size = new System.Drawing.Size(325, 278);
+            this.DgmlCategoryCheckedListView.TabIndex = 0;
+            this.DgmlCategoryCheckedListView.UseCompatibleStateImageBehavior = false;
+            this.DgmlCategoryCheckedListView.View = System.Windows.Forms.View.List;
             // 
             // DgmlFilters
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.DgmlCategoryCheckedListBox);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Controls.Add(this.DgmlCategoryCheckedListView);
             this.Name = "DgmlFilters";
-            this.Size = new System.Drawing.Size(433, 342);
+            this.Size = new System.Drawing.Size(325, 278);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.CheckedListBox DgmlCategoryCheckedListBox;
+        private System.Windows.Forms.ListView DgmlCategoryCheckedListView;
     }
 }

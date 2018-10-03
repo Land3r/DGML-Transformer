@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DGMLTransformer.Presentation.Models
+namespace DGMLTransformer.Domain
 {
     public class DgmlCategory
     {

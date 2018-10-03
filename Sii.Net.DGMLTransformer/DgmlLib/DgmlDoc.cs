@@ -11,11 +11,10 @@ using System.IO;
 
 namespace DgmlLib
 {
-
     /// <summary>
     /// Document DGML. Fournit les fonction utile pour la constitution d'un document DGML.
     /// </summary>
-    public class DgmlDoc
+    public class DgmlDoc : ICloneable
     {
         public string LoadedFilePath { get; private set; }
         public string LastSavedFilePath { get; set; }
@@ -485,5 +484,27 @@ namespace DgmlLib
 
         }
 
+        public override string ToString()
+        {
+            return _xdoc.ToString().Replace("<DirectedGraph ", "<DirectedGraph xmlns=\"http://schemas.microsoft.com/vs/2009/dgml\" ");
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj is DgmlDoc)
+            {
+                DgmlDoc dgmlObj = (DgmlDoc)obj;
+                return this.ToString().Equals(dgmlObj.ToString());
+            }
+            else
+            {
+                return base.Equals(obj);
+            }
+        }
+
+        public object Clone()
+        {
+            return (DgmlDoc)this.MemberwiseClone();
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using DgmlLib;
+using DGMLTransformer.Domain;
 using DGMLTransformer.Presentation.Events;
-using DGMLTransformer.Presentation.Models;
 using DGMLTransformer.Presentation.UserControls;
 using DGMLTransformer.Services.Dgml;
 using System;
@@ -38,11 +38,6 @@ namespace DGMLTransformer.Presentation
         {
             get { return dgmlDoc; }
         }
-
-        /// <summary>
-        /// List of categories
-        /// </summary>
-        public IList<DgmlCategory> DgmlCategories { get; set; }
 
         /// <summary>
         /// The <see cref="DgmlSelector"/> user control.
@@ -116,16 +111,26 @@ namespace DGMLTransformer.Presentation
             }
         }
 
+        /// <summary>
+        /// Event receiver for the <see cref="EventArgs"/> event.
+        /// </summary>
+        /// <param name="sender">The event sender.</param>
+        /// <param name="e">The event payload.</param>
         private void OnDgmlGeneratorSave(object sender, EventArgs e)
         {
             if (this.dgmlDoc != null)
             {
-                this.dgmlDoc.HideAllCategories();
-                this.dgmlDoc.ShowCategories(this.dgmlFilters.DgmlCategories.Select(p => new Category() { Id = p.Id, Label = p.Label }).ToList());
-                this.dgmlDoc.SaveOnCurrentFile();
+                dgmlService.HideAllCategories(this.dgmlDoc);
+                dgmlService.ShowCategories(this.dgmlDoc, this.dgmlFilters.DgmlCategories);
+                dgmlService.SaveFile(this.dgmlDoc);
             }
         }
 
+        /// <summary>
+        /// Event receiver for the <see cref="EventArgs"/> event.
+        /// </summary>
+        /// <param name="sender">The event sender.</param>
+        /// <param name="e">The event payload.</param>
         private void OnDgmlGeneratorView(object sender, EventArgs e)
         {
             if (this.dgmlDoc != null)

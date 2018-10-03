@@ -17,11 +17,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Presentation", "01 - P
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Services", "02 - Services", "{669B0B8A-B8E7-42B7-8F28-3ABEEB45DF44}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Transversal", "03 - Transversal", "{B7935FE9-17FC-4B1D-A041-E0C4F47FBFA6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Transversal", "04 - Transversal", "{B7935FE9-17FC-4B1D-A041-E0C4F47FBFA6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Tests", "04 - Tests", "{B682EDA7-01D0-4DB4-9C6F-11CFF9C1D324}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DGMLTransformer.Services.Tests", "DGMLTransformer.Services.Tests\DGMLTransformer.Services.Tests.csproj", "{ADBFB7B7-946F-4F88-ACA6-FAA00A9D5C4B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Domain", "03 - Domain", "{C4E64479-1FDF-49DD-9AEF-4E777C6BB7AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DgmlTransformer.Domain", "DgmlTransformer.Domain\DgmlTransformer.Domain.csproj", "{E2347971-FFB9-445D-81ED-CC0A78E41BA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +53,10 @@ Global
 		{ADBFB7B7-946F-4F88-ACA6-FAA00A9D5C4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADBFB7B7-946F-4F88-ACA6-FAA00A9D5C4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADBFB7B7-946F-4F88-ACA6-FAA00A9D5C4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2347971-FFB9-445D-81ED-CC0A78E41BA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2347971-FFB9-445D-81ED-CC0A78E41BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2347971-FFB9-445D-81ED-CC0A78E41BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2347971-FFB9-445D-81ED-CC0A78E41BA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +67,7 @@ Global
 		{3A49C4CB-91A4-40E1-8C13-1D94D843FC05} = {1873B9E2-3B14-4129-9370-077D374A2FF5}
 		{0106108D-D643-4A65-B709-F80B8DA297D4} = {669B0B8A-B8E7-42B7-8F28-3ABEEB45DF44}
 		{ADBFB7B7-946F-4F88-ACA6-FAA00A9D5C4B} = {B682EDA7-01D0-4DB4-9C6F-11CFF9C1D324}
+		{E2347971-FFB9-445D-81ED-CC0A78E41BA4} = {C4E64479-1FDF-49DD-9AEF-4E777C6BB7AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CCB27530-9825-46F6-BDA0-0B3738247061}

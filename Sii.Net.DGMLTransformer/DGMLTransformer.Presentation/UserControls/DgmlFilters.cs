@@ -37,7 +37,7 @@ namespace DGMLTransformer.Presentation.UserControls
             DgmlCategoryCheckedListView.CheckBoxes = true;
         }
         /// <summary>
-        /// Fill the check list with category
+        /// Fill the check list with category.
         /// </summary>
         private void FillCheckedListView(IList<DgmlCategory> dgmlCategories)
         {
@@ -45,6 +45,27 @@ namespace DGMLTransformer.Presentation.UserControls
             foreach (ListViewItem category in dgmlCategoryList)
             {
                 this.DgmlCategoryCheckedListView.Items.Add(category);
+            }
+        }
+
+        /// <summary>
+        /// Empty the collection of filters.
+        /// </summary>
+        private void EmptyListView()
+        {
+            this.DgmlCategoryCheckedListView.Items.Clear();
+        }
+
+        /// <summary>
+        /// Event receiver for the <see cref="DgmlFileEventArgs"/> event.
+        /// </summary>
+        /// <param name="sender">The event sender.</param>
+        /// <param name="e">The event payload.</param>
+        public void OnDgmlFileSelected(object sender, DgmlFileEventArgs e)
+        {
+            if (e.Type == DgmlFileEventEnum.Selected)
+            {
+                this.EmptyListView();
             }
         }
 

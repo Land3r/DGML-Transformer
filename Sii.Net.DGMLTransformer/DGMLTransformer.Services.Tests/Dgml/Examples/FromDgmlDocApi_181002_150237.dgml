@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1 @35 Type=SEARCH_COMMUNE)" Category="CodeSchema_Class" Bounds="2447.22763150673,8.00223318111626,122.843333333333,26" CodeSchemaProperty_IsPublic="True" CommonLabel="SEARCH_COMMUNE" Icon="Microsoft.VisualStudio.Class.Public" Label="SEARCH_COMMUNE">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="(@1 Namespace=Bytel.RSO.Sources Type=DmMain)" Category="CodeSchema_Class" Bounds="2600.07096484006,0,86.3300000000017,26" CodeSchemaProperty_IsPublic="True" CommonLabel="DmMain" Icon="Microsoft.VisualStudio.Class.Public" Label="DmMain" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///P:/SVN_IOR_ECO/RSO_1.4.2.10/RSO/Sources/DmMain.cs StartLineNumber=14 StartCharacterOffset=2 EndLineNumber=14 EndCharacterOffset=2)" />
+    <Node Id="18100215023655_101" Category="EnsembleInstantiationNode" Bounds="464.265866210015,40.3349999999998,88.0533333333333,21.97" Label="DmSite REGIONS" />
+    <Node Id="18100215023655_103" Category="EnsembleInstantiationNode" Bounds="451.444199543349,1275.335,113.696666666667,21.97" Label="DmSite IMPLANTATION" />
+    <Node Id="18100215023655_108" Category="EnsembleInstantiationNode" Bounds="268.183899847783,1019.335,112.94,21.97" Label="DmSite EQPT_NONPOS" />
+    <Node Id="18100215023655_110" Category="EnsembleInstantiationNode" Bounds="111.060833333333,891.335,105.93,21.97" Label="DmSite LST_ELM_POS" />
+    <Node Id="18100215023655_112" Category="EnsembleInstantiationNode" Bounds="111.060833333333,839.335,105.93,21.97" Label="DmSite LST_ELM_POS" />
+    <Node Id="18100215023655_25" Category="EnsembleInstantiationNode" Bounds="1217.31036544893,61.335,110.903333333333,21.97" Label="DmGlobal LST_VALEUR" />
+    <Node Id="18100215023655_26" Category="EnsembleIdNode" Bounds="1376.83343196338,-7.105427357601E-15,118.086666666667,20.64" Label="EnsembleKinds.LST_VALEUR">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="18100215023655_27" Category="EnsembleInstantiationNode" Bounds="112.130833333333,167.335,103.79,21.97" Label="DmSite SEARCH_SITE" />
+    <Node Id="18100215023655_29" Category="EnsembleInstantiationNode" Bounds="112.130833333333,94.3349999999998,103.79,21.97" Label="DmSite SEARCH_SITE" />
+    <Node Id="18100215023655_30" Category="EnsembleInstantiationNode" Bounds="658.972832572248,1091.335,67.6933333333334,21.97" Label="DmSite SITE" />
+    <Node Id="18100215023655_34" Category="EnsembleInstantiationNode" Bounds="468.087532876682,2867.335,80.41,21.9699999999998" Label="DmSite NODES" />
+    <Node Id="18100215023655_37" Category="EnsembleInstantiationNode" Bounds="470.985866210015,870.335,74.6133333333333,21.97" Label="DmSite LINKS" />
+    <Node Id="18100215023655_39" Category="EnsembleInstantiationNode" Bounds="281.217233181116,3732.335,86.8733333333333,21.9699999999998" Label="DmSite LIEU_EFC" />
+    <Node Id="18100215023655_44" Category="EnsembleInstantiationNode" Bounds="280.73556651445,3487.335,87.8366666666667,21.9699999999998" Label="DmSite LIEU_TRR" />
+    <Node Id="18100215023655_49" Category="EnsembleInstantiationNode" Bounds="263.173899847783,2432.335,122.96,21.9699999999998" Label="DmSite SOUS_LIEU_SPEFC" />
+    <Node Id="18100215023655_54" Category="EnsembleInstantiationNode" Bounds="262.692233181117,1942.335,123.923333333333,21.97" Label="DmSite SOUS_LIEU_SPTRR" />
+    <Node Id="18100215023655_59" Category="EnsembleInstantiationNode" Bounds="260.082233181116,1535.335,129.143333333333,21.97" Label="DmSite SOUS_LIEU_SUPEFC" />
+    <Node Id="18100215023655_64" Category="EnsembleInstantiationNode" Bounds="259.60056651445,1454.335,130.106666666667,21.97" Label="DmSite SOUS_LIEU_SUPTRR" />
+    <Node Id="18100215023655_69" Category="EnsembleInstantiationNode" Bounds="284.21056651445,3261.335,80.8866666666667,21.9699999999998" Label="DmSite COQUE" />
+    <Node Id="18100215023655_74" Category="EnsembleInstantiationNode" Bounds="263.537233181116,2484.335,122.233333333333,21.9699999999998" Label="DmSite SOUS_LIEU_SALLE" />
+    <Node Id="18100215023655_79" Category="EnsembleInstantiationNode" Bounds="280.332233181116,3936.335,88.6433333333333,21.9699999999998" Label="DmSite ANT_PHY" />
+    <Node Id="18100215023655_81" Category="EnsembleInstantiationNode" Bounds="116.469632142628,1302.77036979066,84.34,21.97" Label="DmSite ANT_FIX" UseManualLocation="True" />
+    <Node Id="18100215023655_83" Category="EnsembleInstantiationNode" Bounds="288.482233181116,677.335,72.3433333333334,21.97" Label="DmSite EQPT" />
+    <Node Id="18100215023655_85" Category="EnsembleInstantiationNode" Bounds="121.0025,570.335,86.0466666666667,21.97" Label="DmSite FCT_EQP" />
+    <Node Id="18100215023655_87" Category="EnsembleInstantiationNode" Bounds="463.972532876682,1204.335,88.64,21.97" Label="DmSite OPR_SITE" />
+    <Node Id="18100215023655_89" Category="EnsembleInstantiationNode" Bounds="459.632532876682,4169.335,97.32,21.9700000000003" Label="DmSite COMPTEUR" />
+    <Node Id="18100215023655_91" Category="EnsembleInstantiationNode" Bounds="448.697532876682,534.335,119.19,21.97" Label="DmSite OPERATEUR_SITE" />
+    <Node Id="18100215023655_93" Category="EnsembleInstantiationNode" Bounds="473.869199543349,4089.335,68.8466666666666,21.9700000000003" Label="DmSite BAIL" />
+    <Node Id="18100215023655_95" Category="EnsembleInstantiationNode" Bounds="471.510866210015,818.335,73.5633333333333,21.97" Label="DmSite ANFR" />
+    <Node Id="18100215023655_97" Category="EnsembleInstantiationNode" Bounds="276.307233181116,423.335,96.6933333333333,21.97" Label="DmSite DOMAINES" />
+    <Node Id="18100215023655_99" Category="EnsembleInstantiationNode" Bounds="113.289166666667,371.335,101.473333333333,21.97" Label="DmSite SDOMAINES" />
+    <Node Id="@26" Category="CodeSchema_Class" Bounds="2716.40096484006,0,118.893333333333,26" CodeSchemaProperty_IsPublic="True" CommonLabel="DmAppService" Icon="Microsoft.VisualStudio.Class.Public" Label="DmAppService" />
+    <Node Id="@27" Category="CodeSchema_Class" Bounds="1091.63619878226,59.32,93.9866666666667,26" CodeSchemaProperty_IsPublic="True" CommonLabel="DmGlobal" Icon="Microsoft.VisualStudio.Class.Public" Label="DmGlobal" />
+    <Node Id="@28" Category="CodeSchema_Class" Bounds="0,1152.32,79.3733333333333,26" CodeSchemaProperty_IsPublic="True" CommonLabel="DmSite" Icon="Microsoft.VisualStudio.Class.Public" Label="DmSite" />
+    <Node Id="@29" Category="CodeSchema_Class" Bounds="1664.94649847783,2.48689957516035E-14,148.4,26" CodeSchemaProperty_IsPublic="True" CommonLabel="ApplicationManager" Icon="Microsoft.VisualStudio.Class.Public" Label="ApplicationManager" />
+    <Node Id="@30" Category="CodeSchema_Class" Bounds="1853.10733181116,56,76.8199999999999,26" CodeSchemaProperty_IsPublic="True" CommonLabel="FmSite" Icon="Microsoft.VisualStudio.Class.Public" Label="FmSite">
+      <Category Ref="UiClassNode" />
+    </Node>
+    <Node Id="@31" Category="CodeSchema_Class" Bounds="1988.80649847783,56,97.6066666666666,26" CodeSchemaProperty_IsPublic="True" CommonLabel="FrSiteDock" Icon="Microsoft.VisualStudio.Class.Public" Label="FrSiteDock">
+      <Category Ref="UiClassNode" />
+    </Node>
+    <Node Id="@32" Category="CodeSchema_Class" Bounds="2137.21899847783,56,94.5933333333332,26" CodeSchemaProperty_IsPublic="True" CommonLabel="FrSiteMap" Icon="Microsoft.VisualStudio.Class.Public" Label="FrSiteMap">
+      <Category Ref="UiClassNode" />
+    </Node>
+    <Node Id="@33" Category="CodeSchema_Class" Bounds="1845.03399847783,1.4210854715202E-14,92.9666666666667,26" CodeSchemaProperty_IsPublic="True" CommonLabel="FmDetails" Icon="Microsoft.VisualStudio.Class.Public" Label="FmDetails">
+      <Category Ref="UiClassNode" />
+    </Node>
+    <Node Id="@34" Category="CodeSchema_Class" Bounds="1969.6881651445,3.5527136788005E-15,135.843333333333,26" CodeSchemaProperty_IsPublic="True" CommonLabel="FrSitePageControl" Icon="Microsoft.VisualStudio.Class.Public" Label="FrSitePageControl">
+      <Category Ref="UiClassNode" />
+    </Node>
+    <Node Id="@36" Category="CodeSchema_Class" Bounds="836.098132267814,725.32,82.4966666666667,26" CodeSchemaProperty_IsPublic="True" CommonLabel="GET_ANFR" Icon="Microsoft.VisualStudio.Class.Public" Label="GET_ANFR">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="@37" Category="CodeSchema_Class" Bounds="461.655866210015,1327.32,93.2733333333333,26" CodeSchemaProperty_IsPublic="True" CommonLabel="GET_ANT_FIX" Icon="Microsoft.VisualStudio.Class.Public" Label="GET_ANT_FIX">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="@38" Category="CodeSchema_Class" Bounds="644.031165905581,3958.32,97.5766666666667,26" CodeSchemaProperty_IsPublic="True" CommonLabel="GET_ANT_PHY" Icon="Microsoft.VisualStudio.Class.Public" Label="GET_ANT_PHY">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="@39" Category="CodeSchema_Class" Bounds="838.456465601147,4041.32,77.78,26" CodeSchemaProperty_IsPublic="True" CommonLabel="GET_BAIL" Icon="Microsoft.VisualStudio.Class.Public" Label="GET_BAIL">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="@40" Category="CodeSchema_Class" Bounds="824.219798934481,4208.32,106.253333333333,26" CodeSchemaProperty_IsPublic="True" CommonLabel="GET_COMPTEUR" Icon="Microsoft.VisualStudio.Class.Public" Label="GET_COMPTEUR">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="@41" Category="CodeSchema_Class" Bounds="647.909499238915,3382.32,89.8199999999999,26" CodeSchemaProperty_IsPublic="True" CommonLabel="GET_COQUE" Icon="Microsoft.VisualStudio.Class.Public" Label="GET_COQUE">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="@42" Category="CodeSchema_Class" Bounds="642.282832572248,318.32,101.073333333333,26" CodeSchemaProperty_IsPublic="True" CommonLabel="GET_DOMAINS" Icon="Microsoft.VisualStudio.Class.Public" Label="GET_DOMAINS">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="@43" Category="CodeSchema_Class" Bounds="652.181165905581,557.32,81.2766666666666,26" CodeSchemaProperty_IsPublic="True" CommonLabel="GET_EQPT" Icon="Microsoft.VisualStudio.Class.Public" Label="GET_EQPT">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="@44" Category="CodeSchema_Class" Bounds="631.882832572248,959.32,121.873333333333,26" CodeSchemaProperty_IsPublic="True" CommonLabel="GET_EQPT_NONPOS" Icon="Microsoft.VisualStudio.Class.Public" Label="GET_EQPT_NONPOS">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="@45" Category="CodeSchema_Class" Bounds="460.802532876682,478.32,94.98,25.9999999999999" CodeSchemaProperty_IsPublic="True" CommonLabel="GET_FCT_EQP" Icon="Microsoft.VisualStudio.Class.Public" Label="GET_FCT_EQP">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="@46" Category="CodeSchema_Class" Bounds="816.031465601147,1444.32,122.63,26" CodeSchemaProperty_IsPublic="True" CommonLabel="GET_IMPLANTATION" Icon="Microsoft.VisualStudio.Class.Public" Label="GET_IMPLANTATION">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="@47" Category="CodeSchema_Class" Bounds="654.044499238915,3590.32,77.55,26" CodeSchemaProperty_IsPublic="True" CommonLabel="GET_LIEU" Icon="Microsoft.VisualStudio.Class.Public" Label="GET_LIEU">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="@48" Category="CodeSchema_Class" Bounds="835.573132267814,849.32,83.5466666666666,26" CodeSchemaProperty_IsPublic="True" CommonLabel="GET_LINKS" Icon="Microsoft.VisualStudio.Class.Public" Label="GET_LINKS">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="@49" Category="CodeSchema_Class" Bounds="450.860866210015,762.32,114.863333333333,26" CodeSchemaProperty_IsPublic="True" CommonLabel="GET_LST_ELM_POS" Icon="Microsoft.VisualStudio.Class.Public" Label="GET_LST_ELM_POS">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="@50" Category="CodeSchema_Class" Bounds="832.674798934481,2917.32,89.3433333333334,26" CodeSchemaProperty_IsPublic="True" CommonLabel="GET_NODES" Icon="Microsoft.VisualStudio.Class.Public" Label="GET_NODES">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="@51" Category="CodeSchema_Class" Bounds="813.28479893448,389.32,128.123333333333,26" CodeSchemaProperty_IsPublic="True" CommonLabel="GET_OPERATEUR_SITE" Icon="Microsoft.VisualStudio.Class.Public" Label="GET_OPERATEUR_SITE">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="@52" Category="CodeSchema_Class" Bounds="828.559798934481,1234.32,97.5733333333334,26" CodeSchemaProperty_IsPublic="True" CommonLabel="GET_OPR_SITE" Icon="Microsoft.VisualStudio.Class.Public" Label="GET_OPR_SITE">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="@53" Category="CodeSchema_Class" Bounds="828.853132267814,77.3199999999998,96.9866666666667,26" CodeSchemaProperty_IsPublic="True" CommonLabel="GET_REGIONS" Icon="Microsoft.VisualStudio.Class.Public" Label="GET_REGIONS">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="@54" Category="CodeSchema_Class" Bounds="985.009532115597,1121.32,76.6266666666668,26" CodeSchemaProperty_IsPublic="True" CommonLabel="GET_SITE" Icon="Microsoft.VisualStudio.Class.Public" Label="GET_SITE">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="@55" Category="CodeSchema_Class" Bounds="640.911165905581,1776.32,103.816666666667,26" CodeSchemaProperty_IsPublic="True" CommonLabel="GET_SOUS_LIEU" Icon="Microsoft.VisualStudio.Class.Public" Label="GET_SOUS_LIEU">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="@56" Category="CodeSchema_Class" Bounds="1543.53983181116,69.32,91.4066666666668,26" CodeSchemaProperty_IsPublic="True" CommonLabel="GET_VALEUR" Icon="Microsoft.VisualStudio.Class.Public" Label="GET_VALEUR">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="@57" Category="CodeSchema_Class" Bounds="451.894199543349,92.3199999999998,112.796666666667,26" CodeSchemaProperty_IsPublic="True" CommonLabel="SEARCH_SITE_IMP" Icon="Microsoft.VisualStudio.Class.Public" Label="SEARCH_SITE_IMP">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="@58" Category="CodeSchema_Class" Bounds="453.705866210016,148.32,109.173333333333,26" CodeSchemaProperty_IsPublic="True" CommonLabel="SEARCH_SITE_SIT" Icon="Microsoft.VisualStudio.Class.Public" Label="SEARCH_SITE_SIT">
+      <Category Ref="EnsembleClass" />
+    </Node>
+    <Node Id="ADMBDS.PKG_OS1_SITE.GET_OPR_SITE" Category="DbObject" Bounds="615.955599391132,1290.31776681888,153.727799695566,42.0044663622325" Label="ADMBDS.PKG_OS1_SITE.&#xD;&#xA;GET_OPR_SITE" />
+    <Node Id="ADMBDS.PKG_OS1_SITE.SEARCH_COMMUNE" Category="DbObject" Bounds="2261.81233181116,0,153.727799695566,42.0044663622325" Label="ADMBDS.PKG_OS1_SITE.&#xD;&#xA;SEARCH_COMMUNE" />
+    <Node Id="ADMHIS.APP_RSO_QRY.GET_ANFR" Category="DbObject" Bounds="616.843932724465,614.317766818883,151.951133028899,42.0044663622325" Label="ADMHIS.APP_RSO_QRY.&#xD;&#xA;GET_ANFR" />
+    <Node Id="ADMHIS.APP_RSO_QRY.GET_ANT_FIX" Category="DbObject" Bounds="248.678333333333,1231.31776681888,151.951133028899,42.0044663622325" Label="ADMHIS.APP_RSO_QRY.&#xD;&#xA;GET_ANT_FIX" />
+    <Node Id="ADMHIS.APP_RSO_QRY.GET_ANT_PHY" Category="DbObject" Bounds="432.316966362233,3965.31776681888,151.951133028899,42.0044663622325" Label="ADMHIS.APP_RSO_QRY.&#xD;&#xA;GET_ANT_PHY" />
+    <Node Id="ADMHIS.APP_RSO_QRY.GET_BAIL" Category="DbObject" Bounds="616.843932724465,4046.31776681888,151.951133028899,42.004466362233" Label="ADMHIS.APP_RSO_QRY.&#xD;&#xA;GET_BAIL" />
+    <Node Id="ADMHIS.APP_RSO_QRY.GET_COMPTEUR" Category="DbObject" Bounds="616.843932724465,4252.31776681888,151.951133028899,42.004466362233" Label="ADMHIS.APP_RSO_QRY.&#xD;&#xA;GET_COMPTEUR" />
+    <Node Id="ADMHIS.APP_RSO_QRY.GET_COQUE" Category="DbObject" Bounds="432.316966362233,3271.31776681888,151.951133028899,42.0044663622325" Label="ADMHIS.APP_RSO_QRY.&#xD;&#xA;GET_COQUE" />
+    <Node Id="ADMHIS.APP_RSO_QRY.GET_DOMAINS" Category="DbObject" Bounds="432.316966362233,323.317766818884,151.951133028899,42.0044663622326" Label="ADMHIS.APP_RSO_QRY.&#xD;&#xA;GET_DOMAINS" />
+    <Node Id="ADMHIS.APP_RSO_QRY.GET_EQPT" Category="DbObject" Bounds="432.316966362233,638.317766818884,151.951133028899,42.0044663622325" Label="ADMHIS.APP_RSO_QRY.&#xD;&#xA;GET_EQPT" />
+    <Node Id="ADMHIS.APP_RSO_QRY.GET_EQPT_NONPOS" Category="DbObject" Bounds="432.316966362233,1000.31776681888,151.951133028899,42.0044663622325" Label="ADMHIS.APP_RSO_QRY.&#xD;&#xA;GET_EQPT_NONPOS" />
+    <Node Id="ADMHIS.APP_RSO_QRY.GET_FCT_EQP" Category="DbObject" Bounds="248.678333333333,522.317766818884,151.951133028899,42.0044663622325" Label="ADMHIS.APP_RSO_QRY.&#xD;&#xA;GET_FCT_EQP" />
+    <Node Id="ADMHIS.APP_RSO_QRY.GET_IMPLANTATION" Category="DbObject" Bounds="616.843932724465,1436.31776681888,151.951133028899,42.0044663622325" Label="ADMHIS.APP_RSO_QRY.&#xD;&#xA;GET_IMPLANTATION" />
+    <Node Id="ADMHIS.APP_RSO_QRY.GET_LIEU" Category="DbObject" Bounds="432.316966362233,3582.31776681888,151.951133028899,42.0044663622325" Label="ADMHIS.APP_RSO_QRY.&#xD;&#xA;GET_LIEU" />
+    <Node Id="ADMHIS.APP_RSO_QRY.GET_LINKS" Category="DbObject" Bounds="616.843932724465,873.317766818883,151.951133028899,42.0044663622325" Label="ADMHIS.APP_RSO_QRY.&#xD;&#xA;GET_LINKS" />
+    <Node Id="ADMHIS.APP_RSO_QRY.GET_LST_ELM_POS" Category="DbObject" Bounds="248.678333333333,774.317766818884,151.951133028899,42.0044663622325" Label="ADMHIS.APP_RSO_QRY.&#xD;&#xA;GET_LST_ELM_POS" />
+    <Node Id="ADMHIS.APP_RSO_QRY.GET_NODES" Category="DbObject" Bounds="616.843932724465,2784.31776681888,151.951133028899,42.0044663622325" Label="ADMHIS.APP_RSO_QRY.&#xD;&#xA;GET_NODES" />
+    <Node Id="ADMHIS.APP_RSO_QRY.GET_OPERATEUR_SITE" Category="DbObject" Bounds="616.843932724465,484.317766818883,151.951133028899,42.0044663622325" Label="ADMHIS.APP_RSO_QRY.&#xD;&#xA;GET_OPERATEUR_SITE" />
+    <Node Id="ADMHIS.APP_RSO_QRY.GET_REGIONS" Category="DbObject" Bounds="616.843932724465,82.3177668188835,151.951133028899,42.0044663622325" Label="ADMHIS.APP_RSO_QRY.&#xD;&#xA;GET_REGIONS" />
+    <Node Id="ADMHIS.APP_RSO_QRY.GET_SITE" Category="DbObject" Bounds="801.370899086698,1103.31776681888,151.951133028899,42.0044663622325" Label="ADMHIS.APP_RSO_QRY.&#xD;&#xA;GET_SITE" />
+    <Node Id="ADMHIS.APP_RSO_QRY.GET_SOUS_LIEU" Category="DbObject" Bounds="432.316966362233,1932.31776681888,151.951133028899,42.0044663622325" Label="ADMHIS.APP_RSO_QRY.&#xD;&#xA;GET_SOUS_LIEU" />
+    <Node Id="ADMHIS.APP_RSO_QRY.GET_VALEUR" Category="DbObject" Bounds="1359.90119878226,51.3177668188837,151.951133028899,42.0044663622325" Label="ADMHIS.APP_RSO_QRY.&#xD;&#xA;GET_VALEUR" />
+    <Node Id="ADMHIS.APP_RSO_QRY.SEARCH_SITE_IMP" Category="DbObject" Bounds="248.678333333333,32.3177668188835,151.951133028899,42.0044663622325" Label="ADMHIS.APP_RSO_QRY.&#xD;&#xA;SEARCH_SITE_IMP" />
+    <Node Id="ADMHIS.APP_RSO_QRY.SEARCH_SITE_SIT" Category="DbObject" Bounds="248.678333333333,219.317766818884,151.951133028899,42.0044663622326" Label="ADMHIS.APP_RSO_QRY.&#xD;&#xA;SEARCH_SITE_SIT" />
+    <Node Id="APP_RSO_SIT.DEL_ELMSIT" Category="DbObject" Bounds="637.240599391132,2857.31776681888,111.157799695566,42.0044663622325" Label="APP_RSO_SIT.&#xD;&#xA;DEL_ELMSIT" />
+    <Node Id="APP_RSO_SIT.DEL_IMPLANTATION" Category="DbObject" Bounds="623.673932724465,1591.31776681888,138.291133028899,42.0044663622325" Label="APP_RSO_SIT.&#xD;&#xA;DEL_IMPLANTATION" />
+    <Node Id="APP_RSO_SIT.NEW_IMPLANTATION" Category="DbObject" Bounds="621.377266057798,1363.31776681888,142.884466362233,42.0044663622325" Label="APP_RSO_SIT.&#xD;&#xA;NEW_IMPLANTATION" />
+    <Node Id="APP_RSO_SIT.SET_IMPLANTATION" Category="DbObject" Bounds="624.198932724465,1664.31776681888,137.241133028899,42.0044663622325" Label="APP_RSO_SIT.&#xD;&#xA;SET_IMPLANTATION" />
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.ANFR" Category="EnsembleIdNode" Bounds="645.499499238915,687,94.64,20.64" Label="EnsembleKinds.ANFR">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.ANT_FIX" Category="EnsembleIdNode" Bounds="272.547233181117,1359,104.213333333333,20.6400000000001" Label="EnsembleKinds.ANT_FIX">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.ANT_PHY" Category="EnsembleIdNode" Bounds="454.272532876682,4038,108.04,20.6399999999999" Label="EnsembleKinds.ANT_PHY">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.BAIL" Category="EnsembleIdNode" Bounds="647.596165905582,4119,90.4466666666667,20.6400000000003" Label="EnsembleKinds.BAIL">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.COMPTEUR" Category="EnsembleIdNode" Bounds="634.942832572248,4170,115.753333333333,20.6400000000003" Label="EnsembleKinds.COMPTEUR">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.COQUE" Category="EnsembleIdNode" Bounds="457.720866210016,3344,101.143333333333,20.6399999999999" Label="EnsembleKinds.COQUE">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.DOMAINES" Category="EnsembleIdNode" Bounds="450.694199543349,396,115.196666666667,20.64" Label="EnsembleKinds.DOMAINES">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.EQPT" Category="EnsembleIdNode" Bounds="461.517532876682,587,93.55,20.64" Label="EnsembleKinds.EQPT">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.EQPT_NONPOS" Category="EnsembleIdNode" Bounds="443.479199543349,1122,129.626666666667,20.6400000000001" Label="EnsembleKinds.EQPT_NONPOS">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.FCT_EQP" Category="EnsembleIdNode" Bounds="271.788899847783,595,105.73,20.64" Label="EnsembleKinds.FCT_EQP">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.IMPLANTATION" Category="EnsembleIdNode" Bounds="627.667832572248,1540,130.303333333333,20.6400000000001" Label="EnsembleKinds.IMPLANTATION">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.LIEU_EFC" Category="EnsembleIdNode" Bounds="455.057532876682,3851,106.47,20.6399999999999" Label="EnsembleKinds.LIEU_EFC">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.LIEU_TRR" Category="EnsembleIdNode" Bounds="454.629199543349,3458,107.326666666667,20.6399999999999" Label="EnsembleKinds.LIEU_TRR">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.LINKS" Category="EnsembleIdNode" Bounds="645.032832572248,791,95.5733333333334,20.64" Label="EnsembleKinds.LINKS">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.LST_ELM_POS" Category="EnsembleIdNode" Bounds="262.95056651445,893,123.406666666667,20.64" Label="EnsembleKinds.LST_ELM_POS">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.NODES" Category="EnsembleIdNode" Bounds="642.457832572248,2961,100.723333333333,20.6399999999999" Label="EnsembleKinds.NODES">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.OPERATEUR_SITE" Category="EnsembleIdNode" Bounds="625.224499238915,433,135.19,20.64" Label="EnsembleKinds.OPERATEUR_SITE">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.OPR_SITE" Category="EnsembleIdNode" Bounds="638.801165905581,1239,108.036666666667,20.6400000000001" Label="EnsembleKinds.OPR_SITE">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.REGIONS" Category="EnsembleIdNode" Bounds="639.061165905581,-2.30926389122033E-13,107.516666666667,20.64" Label="EnsembleKinds.REGIONS">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.SDOMAINES" Category="EnsembleIdNode" Bounds="264.93056651445,323,119.446666666667,20.64" Label="EnsembleKinds.SDOMAINES">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.SEARCH_SITE" Category="EnsembleIdNode" Bounds="263.902233181116,168,121.503333333333,20.64" Label="EnsembleKinds.SEARCH_SITE">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.SITE" Category="EnsembleIdNode" Bounds="832.636465601147,979,89.42,20.64" Label="EnsembleKinds.SITE">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.SOUS_LIEU_SALLE" Category="EnsembleIdNode" Bounds="439.342532876682,2816,137.9,20.6399999999999" Label="EnsembleKinds.SOUS_LIEU_SALLE">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.SOUS_LIEU_SPEFC" Category="EnsembleIdNode" Bounds="439.019199543349,2605,138.546666666667,20.6399999999999" Label="EnsembleKinds.SOUS_LIEU_SPEFC">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.SOUS_LIEU_SPTRR" Category="EnsembleIdNode" Bounds="438.590866210016,1881,139.403333333333,20.6400000000001" Label="EnsembleKinds.SOUS_LIEU_SPTRR">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.SOUS_LIEU_SUPEFC" Category="EnsembleIdNode" Bounds="436.270866210015,1497,144.043333333333,20.6400000000001" Label="EnsembleKinds.SOUS_LIEU_SUPEFC">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="Bytel.RSO.Sources.Site.EnsembleKinds.SOUS_LIEU_SUPTRR" Category="EnsembleIdNode" Bounds="435.842532876682,1415,144.9,20.6400000000001" Label="EnsembleKinds.SOUS_LIEU_SUPTRR">
+      <Category Ref="ObjectIdNode" />
+    </Node>
+    <Node Id="PKG_OS1_SITE.DELETECOQUE" Category="DbObject" Bounds="450.508633028899,3052.31776681888,115.567799695566,42.0044663622325" Label="PKG_OS1_SITE.&#xD;&#xA;DELETECOQUE" />
+    <Node Id="PKG_OS1_SITE.DELETELIEU" Category="DbObject" Bounds="450.626966362233,3778.31776681888,115.331133028899,42.0044663622325" Label="PKG_OS1_SITE.&#xD;&#xA;DELETELIEU" />
+    <Node Id="PKG_OS1_SITE.DELETESOUSLIEU" Category="DbObject" Bounds="445.378633028899,2324.31776681888,125.827799695566,42.0044663622325" Label="PKG_OS1_SITE.&#xD;&#xA;DELETESOUSLIEU" />
+    <Node Id="PKG_OS1_SITE.INSERTCOQUE" Category="DbObject" Bounds="450.626966362233,3125.31776681888,115.331133028899,42.0044663622325" Label="PKG_OS1_SITE.&#xD;&#xA;INSERTCOQUE" />
+    <Node Id="PKG_OS1_SITE.INSERTLIEU" Category="DbObject" Bounds="450.626966362233,3509.31776681888,115.331133028899,42.0044663622325" Label="PKG_OS1_SITE.&#xD;&#xA;INSERTLIEU" />
+    <Node Id="PKG_OS1_SITE.INSERTSITGEO" Category="DbObject" Bounds="819.680899086698,1030.31776681888,115.331133028899,42.0044663622325" Label="PKG_OS1_SITE.&#xD;&#xA;INSERTSITGEO" />
+    <Node Id="PKG_OS1_SITE.INSERTSOUSLIEU" Category="DbObject" Bounds="445.848633028899,1574.31776681888,124.887799695566,42.0044663622325" Label="PKG_OS1_SITE.&#xD;&#xA;INSERTSOUSLIEU" />
+    <Node Id="PKG_OS1_SITE.UPDATECOQUE" Category="DbObject" Bounds="449.0986330289,3198.31776681888,118.387799695566,42.0044663622325" Label="PKG_OS1_SITE.&#xD;&#xA;UPDATECOQUE" />
+    <Node Id="PKG_OS1_SITE.UPDATELIEU" Category="DbObject" Bounds="450.626966362233,3705.31776681888,115.331133028899,42.0044663622325" Label="PKG_OS1_SITE.&#xD;&#xA;UPDATELIEU" />
+    <Node Id="PKG_OS1_SITE.UPDATESITGEO" Category="DbObject" Bounds="818.479232420031,906.317766818883,117.734466362233,42.0044663622325" Label="PKG_OS1_SITE.&#xD;&#xA;UPDATESITGEO" />
+    <Node Id="PKG_OS1_SITE.UPDATESOUSLIEU" Category="DbObject" Bounds="443.968633028899,2128.31776681888,128.647799695566,42.0044663622325" Label="PKG_OS1_SITE.&#xD;&#xA;UPDATESOUSLIEU" />
+  </Nodes>
+  <Links>
+    <Link Source="18100215023655_101" Target="18100215023655_30" Category="MasterEnsembleLk" Bounds="526.6162109375,62.3050003051758,154.951293945313,1021.3187789917" Label="" LabelBounds="598.798972092602,513.287184897496,0.0999999999999091,10.6400000000001" />
+    <Link Source="18100215023655_101" Target="@53" Bounds="552.319213867188,51.3199996948242,286.137084960938,22.4815063476563" />
+    <Link Source="18100215023655_101" Target="ADMHIS.APP_RSO_QRY.GET_REGIONS" Category="StoredProcedureDeclaration" Bounds="534.154968261719,62.3050003051758,73.9456787109375,26.8893585205078" Label="" LabelBounds="600.773729610865,87.7719288998576,0,10.64" />
+    <Link Source="18100215023655_101" Target="Bytel.RSO.Sources.Site.EnsembleKinds.REGIONS" Bounds="540.829162597656,17.4079685211182,89.3153686523438,22.9270305633545" />
+    <Link Source="18100215023655_103" Target="18100215023655_30" Category="MasterEnsembleLk" Bounds="539.812377929688,1120.12719726563,137.685241699219,155.207763671875" Label="" LabelBounds="589.95347863327,1251.93330766929,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_103" Target="@46" Bounds="524.774963378906,1297.30505371094,297.777160644531,201.73583984375" />
+    <Link Source="18100215023655_103" Target="ADMHIS.APP_RSO_QRY.GET_IMPLANTATION" Category="StoredProcedureDeclaration" Bounds="525.260864257813,1297.30505371094,87.5625610351563,134.754760742188" Label="" LabelBounds="605.058151297255,1427.25819595868,0.0999999999999091,10.6400000000003" />
+    <Link Source="18100215023655_103" Target="APP_RSO_SIT.DEL_IMPLANTATION" Category="StoredProcedureDeclaration" Bounds="524.335876464844,1297.30505371094,131.650756835938,288.793090820313" Label="" LabelBounds="606.361484020237,1543.2741665386,0.0999999999999091,10.6400000000003" />
+    <Link Source="18100215023655_103" Target="APP_RSO_SIT.NEW_IMPLANTATION" Category="StoredProcedureDeclaration" Bounds="524.556091308594,1297.30505371094,88.201904296875,81.6820068359375" Label="" LabelBounds="604.39778452928,1375.92019626133,0.0999999999999091,10.6400000000003" />
+    <Link Source="18100215023655_103" Target="APP_RSO_SIT.SET_IMPLANTATION" Category="StoredProcedureDeclaration" Bounds="524.157470703125,1297.30505371094,122.376525878906,362.552856445313" Label="" LabelBounds="601.212585454203,1595.12950262208,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_103" Target="Bytel.RSO.Sources.Site.EnsembleKinds.IMPLANTATION" Bounds="524.539184570313,1297.30505371094,137.865966796875,238.908081054688" />
+    <Link Source="18100215023655_108" Target="18100215023655_30" Category="MasterEnsembleLk" Bounds="348.669036865234,1041.30505371094,301.356353759766,56.3692626953125" Label="" LabelBounds="508.242532876682,1073.32,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_108" Target="@44" Bounds="350.516326904297,977.127014160156,272.387725830078,42.2080078125" />
+    <Link Source="18100215023655_108" Target="ADMHIS.APP_RSO_QRY.GET_EQPT_NONPOS" Category="StoredProcedureDeclaration" Bounds="381.123901367188,1028.83361816406,42.2098388671875,1.4268798828125" Label="" LabelBounds="416.392877032768,1029.69953163074,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_108" Target="Bytel.RSO.Sources.Site.EnsembleKinds.EQPT_NONPOS" Bounds="338.284118652344,1041.30505371094,127.557800292969,78.06982421875" />
+    <Link Source="18100215023655_110" Target="18100215023655_108" Category="MasterEnsembleLk" Bounds="187.57275390625,913.304992675781,101.473022460938,102.666137695313" Label="" LabelBounds="240.380425384551,987.189552641035,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_110" Target="@49" Bounds="190.090118408203,794.510192871094,297.949188232422,96.8248291015625" />
+    <Link Source="18100215023655_110" Target="ADMHIS.APP_RSO_QRY.GET_LST_ELM_POS" Category="StoredProcedureDeclaration" Bounds="183.684356689453,821.628479003906,104.927947998047,69.70654296875" Label="" LabelBounds="245.353740118793,841.406257761346,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_110" Target="Bytel.RSO.Sources.Site.EnsembleKinds.LST_ELM_POS" Bounds="216.990829467773,904.428527832031,36.9601745605469,0.29150390625" />
+    <Link Source="18100215023655_112" Target="18100215023655_34" Category="MasterEnsembleLk" Bounds="165.33219909668,861.304992675781,339.045028686523,1997.20062255859" Label="" LabelBounds="179.324036315493,939.767540424105,0,10.64" />
+    <Link Source="18100215023655_112" Target="@49" Bounds="171.089981079102,743.320007324219,291.402297973633,96.0150146484375" />
+    <Link Source="18100215023655_112" Target="ADMHIS.APP_RSO_QRY.GET_LST_ELM_POS" Category="StoredProcedureDeclaration" Bounds="175.590469360352,793.096984863281,64.3291778564453,46.238037109375" Label="" LabelBounds="235.785769116541,783.197357248864,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_25" Target="18100215023655_26" Bounds="1292.84362792969,22.846061706543,93.1087646484375,38.4889373779297" />
+    <Link Source="18100215023655_25" Target="@56" Bounds="1287.8232421875,83.3050003051758,274.935668945313,41.0149993896484" />
+    <Link Source="18100215023655_25" Target="ADMHIS.APP_RSO_QRY.GET_VALEUR" Category="StoredProcedureDeclaration" Bounds="1328.21374511719,72.3199996948242,22.6875,0" Label="" LabelBounds="1344.00744878226,72.3199999999999,0.0999999999999091,10.6400000000001" />
+    <Link Source="18100215023655_27" Target="@58" Bounds="182.461547851563,137.320007324219,267.138763427734,30.0149993896484" />
+    <Link Source="18100215023655_27" Target="ADMHIS.APP_RSO_QRY.SEARCH_SITE_SIT" Category="StoredProcedureDeclaration" Bounds="183.406967163086,189.304992675781,57.5746002197266,27.9968109130859" Label="" LabelBounds="233.658272017774,215.096177880991,0,10.64" />
+    <Link Source="18100215023655_27" Target="Bytel.RSO.Sources.Site.EnsembleKinds.SEARCH_SITE" Bounds="215.920837402344,178.320007324219,38.9813995361328,0" />
+    <Link Source="18100215023655_29" Target="@57" Bounds="215.920837402344,105.319999694824,226.973358154297,0" />
+    <Link Source="18100215023655_29" Target="ADMHIS.APP_RSO_QRY.SEARCH_SITE_IMP" Category="StoredProcedureDeclaration" Bounds="183.658660888672,68.5969467163086,56.3582763671875,25.7380523681641" Label="" LabelBounds="233.83987585381,59.359386936185,0,10.64" />
+    <Link Source="18100215023655_30" Target="@54" Bounds="706.581604003906,1113.30505371094,292.866394042969,63.014892578125" />
+    <Link Source="18100215023655_30" Target="ADMHIS.APP_RSO_QRY.GET_SITE" Category="StoredProcedureDeclaration" Bounds="726.666137695313,1106.35534667969,65.76806640625,7.841064453125" Label="" LabelBounds="785.477149086698,1113.37295522307,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_30" Target="Bytel.RSO.Sources.Site.EnsembleKinds.SITE" Bounds="706.2041015625,1002.99700927734,137.121337890625,88.3379516601563" />
+    <Link Source="18100215023655_30" Target="PKG_OS1_SITE.INSERTSITGEO" Category="StoredProcedureDeclaration" Bounds="721.960571289063,1063.41040039063,88.9136352539063,27.924560546875" Label="" LabelBounds="785.93654601268,1058.40511428288,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_30" Target="PKG_OS1_SITE.UPDATESITGEO" Category="StoredProcedureDeclaration" Bounds="701.70703125,953.269104003906,136.200378417969,138.065856933594" Label="" LabelBounds="788.42044257032,980.268779137555,0.0999999999999091,10.6400000000001" />
+    <Link Source="18100215023655_34" Target="18100215023655_30" Category="MasterEnsembleLk" Bounds="529.353942871094,1120.30395507813,148.927062988281,1747.03100585938" Label="" LabelBounds="600.061849391132,1700.32,0.0999999999999091,10.6400000000003" />
+    <Link Source="18100215023655_34" Target="@50" Bounds="527.689392089844,2889.30493164063,295.985412597656,41.01513671875" />
+    <Link Source="18100215023655_34" Target="ADMHIS.APP_RSO_QRY.GET_NODES" Category="StoredProcedureDeclaration" Bounds="530.219360351563,2829.32495117188,84.1519165039063,38.010009765625" Label="" LabelBounds="600.696421362236,2823.29105496453,0,10.64" />
+    <Link Source="18100215023655_34" Target="APP_RSO_SIT.DEL_ELMSIT" Category="StoredProcedureDeclaration" Bounds="548.49755859375,2878.32006835938,79.7430419921875,0" Label="" LabelBounds="600.061849391132,2878.32,0,10.64" />
+    <Link Source="18100215023655_34" Target="Bytel.RSO.Sources.Site.EnsembleKinds.NODES" Bounds="520.300109863281,2889.30493164063,113.286437988281,75.539306640625" />
+    <Link Source="18100215023655_37" Target="18100215023655_30" Category="MasterEnsembleLk" Bounds="519.904296875,892.304992675781,155.301208496094,192.725524902344" Label="" LabelBounds="604.890152850224,1008.43064312437,0.0999999999999091,10.6400000000002" />
+    <Link Source="18100215023655_37" Target="@48" Bounds="534.154968261719,842.320007324219,292.614135742188,28.0150146484375" />
+    <Link Source="18100215023655_37" Target="ADMHIS.APP_RSO_QRY.GET_LINKS" Category="StoredProcedureDeclaration" Bounds="545.599182128906,882.392639160156,62.2743530273438,3.09765625" Label="" LabelBounds="600.030224091467,873.770210585647,0.0999999999999091,10.6400000000001" />
+    <Link Source="18100215023655_37" Target="Bytel.RSO.Sources.Site.EnsembleKinds.LINKS" Bounds="522.498657226563,807.211486816406,113.620727539063,63.12353515625" />
+    <Link Source="18100215023655_39" Target="18100215023655_34" Category="MasterEnsembleLk" Bounds="327.245330810547,2897.75170898438,173.900054931641,834.583251953125" Label="" LabelBounds="420.836146428143,3118.27291177364,0,10.64" />
+    <Link Source="18100215023655_39" Target="@47" Bounds="330.51806640625,3624.91625976563,355.605285644531,284.360595703125" />
+    <Link Source="18100215023655_39" Target="ADMHIS.APP_RSO_QRY.GET_LIEU" Category="StoredProcedureDeclaration" Bounds="335.231018066406,3628.32690429688,121.802368164063,104.008056640625" Label="" LabelBounds="419.129761493976,3640.95788913001,0,10.64" />
+    <Link Source="18100215023655_39" Target="Bytel.RSO.Sources.Site.EnsembleKinds.LIEU_EFC" Bounds="331.858428955078,3754.30493164063,124.538269042969,119.5087890625" />
+    <Link Source="18100215023655_39" Target="PKG_OS1_SITE.DELETELIEU" Category="StoredProcedureDeclaration" Bounds="334.946105957031,3754.30493164063,119.040374755859,72.315185546875" Label="" LabelBounds="420.230608829239,3825.38694600938,0,10.64" />
+    <Link Source="18100215023655_39" Target="PKG_OS1_SITE.INSERTLIEU" Category="StoredProcedureDeclaration" Bounds="331.560546875,3555.916015625,133.608428955078,176.4189453125" Label="" LabelBounds="416.423216362232,3588.32,0,10.64" />
+    <Link Source="18100215023655_39" Target="PKG_OS1_SITE.UPDATELIEU" Category="StoredProcedureDeclaration" Bounds="368.090576171875,3738.2138671875,73.6392211914063,5.106201171875" Label="" LabelBounds="416.275460340647,3741.71538487627,0,10.64" />
+    <Link Source="18100215023655_44" Target="18100215023655_34" Category="MasterEnsembleLk" Bounds="326.807434082031,2897.00366210938,170.171966552734,590.331298828125" Label="" LabelBounds="424.381787710568,3022.01660412006,0,10.64" />
+    <Link Source="18100215023655_44" Target="@47" Bounds="338.860015869141,3427.32006835938,342.917327880859,155.037109375" />
+    <Link Source="18100215023655_44" Target="ADMHIS.APP_RSO_QRY.GET_LIEU" Category="StoredProcedureDeclaration" Bounds="344.185943603516,3509.30493164063,120.185546875,68.49072265625" Label="" LabelBounds="416.423216362232,3539.32,0,10.64" />
+    <Link Source="18100215023655_44" Target="Bytel.RSO.Sources.Site.EnsembleKinds.LIEU_TRR" Bounds="350.516326904297,3462.97607421875,95.116455078125,24.35888671875" />
+    <Link Source="18100215023655_44" Target="PKG_OS1_SITE.DELETELIEU" Category="StoredProcedureDeclaration" Bounds="328.084625244141,3509.30493164063,114.850006103516,278.594482421875" Label="" LabelBounds="431.772000831664,3778.39540265582,0,10.64" />
+    <Link Source="18100215023655_44" Target="PKG_OS1_SITE.INSERTLIEU" Category="StoredProcedureDeclaration" Bounds="368.572235107422,3499.58276367188,73.3709106445313,10.18359375" Label="" LabelBounds="415.950687656869,3493.06199776799,0,10.64" />
+    <Link Source="18100215023655_44" Target="PKG_OS1_SITE.UPDATELIEU" Category="StoredProcedureDeclaration" Bounds="329.799987792969,3509.30493164063,114.683380126953,191.66064453125" Label="" LabelBounds="425.806045650365,3685.39273048505,0,10.64" />
+    <Link Source="18100215023655_49" Target="18100215023655_34" Category="MasterEnsembleLk" Bounds="344.611633300781,2454.30493164063,130.109802246094,409.447509765625" Label="" LabelBounds="418.476687265685,2784.08119241484,0,10.64" />
+    <Link Source="18100215023655_49" Target="@55" Bounds="348.669036865234,1811.2412109375,341.230560302734,674.078857421875" />
+    <Link Source="18100215023655_49" Target="ADMHIS.APP_RSO_QRY.GET_SOUS_LIEU" Category="StoredProcedureDeclaration" Bounds="327.617340087891,1981.99328613281,163.081237792969,450.341674804688" Label="" LabelBounds="423.916643461961,2095.33286522716,0,10.64" />
+    <Link Source="18100215023655_49" Target="Bytel.RSO.Sources.Site.EnsembleKinds.SOUS_LIEU_SPEFC" Bounds="345.711334228516,2454.30493164063,85.8489074707031,150.456787109375" />
+    <Link Source="18100215023655_49" Target="PKG_OS1_SITE.DELETESOUSLIEU" Category="StoredProcedureDeclaration" Bounds="386.133911132813,2372.88989257813,96.3274841308594,69.02099609375" Label="" LabelBounds="411.93088342882,2433.92865900768,0,10.64" />
+    <Link Source="18100215023655_49" Target="PKG_OS1_SITE.INSERTSOUSLIEU" Category="StoredProcedureDeclaration" Bounds="326.134185791016,1620.68823242188,136.429412841797,811.646728515625" Label="" LabelBounds="416.423216362233,1717.32,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_49" Target="PKG_OS1_SITE.UPDATESOUSLIEU" Category="StoredProcedureDeclaration" Bounds="331.515350341797,2177.95556640625,158.890838623047,254.37939453125" Label="" LabelBounds="416.423216362232,2296.32,0,10.64" />
+    <Link Source="18100215023655_54" Target="18100215023655_34" Category="MasterEnsembleLk" Bounds="326.232635498047,1964.30505371094,150.361022949219,899.224487304688" Label="" LabelBounds="417.202606583274,2735.24229880041,0,10.64" />
+    <Link Source="18100215023655_54" Target="@55" Bounds="327.845794677734,1656.5634765625,333.452972412109,285.771484375" />
+    <Link Source="18100215023655_54" Target="ADMHIS.APP_RSO_QRY.GET_SOUS_LIEU" Category="StoredProcedureDeclaration" Bounds="386.615570068359,1953.31994628906,36.7013854980469,0" Label="" LabelBounds="416.423216362233,1953.32,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_54" Target="Bytel.RSO.Sources.Site.EnsembleKinds.SOUS_LIEU_SPTRR" Bounds="350.516326904297,1903.84130859375,107.850616455078,38.49365234375" />
+    <Link Source="18100215023655_54" Target="PKG_OS1_SITE.DELETESOUSLIEU" Category="StoredProcedureDeclaration" Bounds="327.226959228516,1964.30505371094,110.378509521484,375.531860351563" Label="" LabelBounds="430.721648194993,2333.61066571673,0,10.64" />
+    <Link Source="18100215023655_54" Target="PKG_OS1_SITE.INSERTSOUSLIEU" Category="StoredProcedureDeclaration" Bounds="327.492248535156,1602.05822753906,110.412170410156,340.276733398438" Label="" LabelBounds="429.721634193485,1598.55591869569,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_54" Target="PKG_OS1_SITE.UPDATESOUSLIEU" Category="StoredProcedureDeclaration" Bounds="329.799987792969,1964.30505371094,106.186584472656,176.915649414063" Label="" LabelBounds="427.335853899701,2135.76666944702,0,10.64" />
+    <Link Source="18100215023655_59" Target="18100215023655_34" Category="MasterEnsembleLk" Bounds="326.613555908203,1557.30505371094,151.141845703125,1306.07482910156" Label="" LabelBounds="416.423216362232,2654.32,0,10.64" />
+    <Link Source="18100215023655_59" Target="@55" Bounds="337.4921875,1431.28820800781,337.299133300781,338.4033203125" />
+    <Link Source="18100215023655_59" Target="ADMHIS.APP_RSO_QRY.GET_SOUS_LIEU" Category="StoredProcedureDeclaration" Bounds="329.077728271484,1557.30505371094,136.701995849609,370.363037109375" Label="" LabelBounds="411.099513387285,1775.77007643524,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_59" Target="Bytel.RSO.Sources.Site.EnsembleKinds.SOUS_LIEU_SUPEFC" Bounds="350.516326904297,1510.15710449219,76.8432006835938,25.1778564453125" />
+    <Link Source="18100215023655_59" Target="PKG_OS1_SITE.DELETESOUSLIEU" Category="StoredProcedureDeclaration" Bounds="326.604553222656,1557.30505371094,163.801635742188,759.379516601563" Label="" LabelBounds="424.713994872967,2195.77339078243,0,10.64" />
+    <Link Source="18100215023655_59" Target="PKG_OS1_SITE.INSERTSOUSLIEU" Category="StoredProcedureDeclaration" Bounds="389.225555419922,1549.07958984375,69.4220275878906,21.2105712890625" Label="" LabelBounds="416.423216362233,1543.27166506291,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_59" Target="PKG_OS1_SITE.UPDATESOUSLIEU" Category="StoredProcedureDeclaration" Bounds="326.865814208984,1557.30505371094,163.540374755859,563.379516601563" Label="" LabelBounds="424.36349871721,1999.55342415206,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_64" Target="18100215023655_34" Category="MasterEnsembleLk" Bounds="336.290618896484,1476.30505371094,141.975952148438,1387.00573730469" Label="" LabelBounds="416.423216362232,2573.32,0,10.64" />
+    <Link Source="18100215023655_64" Target="@55" Bounds="331.705322265625,1326.81433105469,339.683654785156,443.541381835938" />
+    <Link Source="18100215023655_64" Target="ADMHIS.APP_RSO_QRY.GET_SOUS_LIEU" Category="StoredProcedureDeclaration" Bounds="336.746765136719,1476.30505371094,130.058044433594,451.266845703125" Label="" LabelBounds="415.527850341803,1668.40197817658,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_64" Target="Bytel.RSO.Sources.Site.EnsembleKinds.SOUS_LIEU_SUPTRR" Bounds="338.860015869141,1405.10925292969,130.338439941406,49.2257080078125" />
+    <Link Source="18100215023655_64" Target="PKG_OS1_SITE.DELETESOUSLIEU" Category="StoredProcedureDeclaration" Bounds="336.384765625,1476.30505371094,159.091094970703,839.769653320313" Label="" LabelBounds="417.250565377239,2051.2630815989,0,10.64" />
+    <Link Source="18100215023655_64" Target="PKG_OS1_SITE.INSERTSOUSLIEU" Category="StoredProcedureDeclaration" Bounds="389.707244873047,1468.77514648438,85.9431457519531,99.8443603515625" Label="" LabelBounds="406.322756228293,1463.99347428879,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_64" Target="PKG_OS1_SITE.UPDATESOUSLIEU" Category="StoredProcedureDeclaration" Bounds="336.474060058594,1476.30505371094,157.543609619141,643.933471679688" Label="" LabelBounds="417.131385074285,1866.72014223478,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_69" Target="18100215023655_34" Category="MasterEnsembleLk" Bounds="328.11572265625,2896.0126953125,164.349334716797,365.322265625" Label="" LabelBounds="425.161132150803,2974.82673635107,0,10.64" />
+    <Link Source="18100215023655_69" Target="@41" Bounds="332.854187011719,3283.30493164063,306.055297851563,112.01513671875" />
+    <Link Source="18100215023655_69" Target="ADMHIS.APP_RSO_QRY.GET_COQUE" Category="StoredProcedureDeclaration" Bounds="345.23828125,3283.30493164063,78.6698913574219,28.819091796875" Label="" LabelBounds="417.333933410048,3312.17284508549,0,10.64" />
+    <Link Source="18100215023655_69" Target="Bytel.RSO.Sources.Site.EnsembleKinds.COQUE" Bounds="335.73779296875,3283.30493164063,112.983581542969,75.747314453125" />
+    <Link Source="18100215023655_69" Target="PKG_OS1_SITE.DELETECOQUE" Category="StoredProcedureDeclaration" Bounds="329.870269775391,3081.91186523438,112.335357666016,179.423095703125" Label="" LabelBounds="426.982692672306,3080.88695570657,0,10.64" />
+    <Link Source="18100215023655_69" Target="PKG_OS1_SITE.INSERTCOQUE" Category="StoredProcedureDeclaration" Bounds="335.231018066406,3169.60986328125,107.645111083984,91.72509765625" Label="" LabelBounds="419.822783002271,3171.49012671523,0,10.64" />
+    <Link Source="18100215023655_69" Target="PKG_OS1_SITE.UPDATECOQUE" Category="StoredProcedureDeclaration" Bounds="365.097229003906,3244.82153320313,99.0155334472656,27.49853515625" Label="" LabelBounds="414.855506379397,3266.67262606615,0,10.64" />
+    <Link Source="18100215023655_74" Target="18100215023655_34" Category="MasterEnsembleLk" Bounds="348.082794189453,2506.30493164063,111.093597412109,365.06103515625" Label="" LabelBounds="421.326750752784,2862.40701791018,0,10.64" />
+    <Link Source="18100215023655_74" Target="@55" Bounds="349.058563232422,1811.27331542969,341.516998291016,885.046752929688" />
+    <Link Source="18100215023655_74" Target="ADMHIS.APP_RSO_QRY.GET_SOUS_LIEU" Category="StoredProcedureDeclaration" Bounds="345.124694824219,1982.5654296875,150.351165771484,501.76953125" Label="" LabelBounds="418.6318244674,2247.63203389178,0,10.64" />
+    <Link Source="18100215023655_74" Target="Bytel.RSO.Sources.Site.EnsembleKinds.SOUS_LIEU_SALLE" Bounds="348.214813232422,2506.30493164063,82.1277160644531,320.01513671875" />
+    <Link Source="18100215023655_74" Target="PKG_OS1_SITE.DELETESOUSLIEU" Category="StoredProcedureDeclaration" Bounds="359.434417724609,2374.1171875,132.238555908203,141.684814453125" Label="" LabelBounds="406.904705065474,2515.86621947729,0,10.64" />
+    <Link Source="18100215023655_74" Target="PKG_OS1_SITE.INSERTSOUSLIEU" Category="StoredProcedureDeclaration" Bounds="344.206848144531,1620.84460449219,120.167053222656,863.490356445313" Label="" LabelBounds="416.423216362233,1815.32,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_74" Target="PKG_OS1_SITE.UPDATESOUSLIEU" Category="StoredProcedureDeclaration" Bounds="355.164215087891,2178.74975585938,142.098815917969,305.585205078125" Label="" LabelBounds="416.423216362232,2394.32,0,10.64" />
+    <Link Source="18100215023655_79" Target="18100215023655_34" Category="MasterEnsembleLk" Bounds="327.630859375,2897.61474609375,172.635620117188,1038.72021484375" Label="" LabelBounds="417.387726249264,3215.40775047643,0,10.64" />
+    <Link Source="18100215023655_79" Target="@38" Bounds="368.975555419922,3947.32006835938,266.089385986328,18.984130859375" />
+    <Link Source="18100215023655_79" Target="ADMHIS.APP_RSO_QRY.GET_ANT_PHY" Category="StoredProcedureDeclaration" Bounds="350.516326904297,3958.30493164063,72.9131774902344,24.50537109375" Label="" LabelBounds="417.289520748348,3982.14834814623,0,10.64" />
+    <Link Source="18100215023655_79" Target="Bytel.RSO.Sources.Site.EnsembleKinds.ANT_PHY" Bounds="337.106201171875,3958.30493164063,115.130767822266,77.4326171875" />
+    <Link Source="18100215023655_81" Target="18100215023655_79" Category="MasterEnsembleLk" Bounds="159.332104100987,1324.74037109375,164.063123510286,2602.61240405164" Label="" LabelBounds="168.619302468911,1403.1677964247,0.0999999999999943,10.6399999999999" />
+    <Link Source="18100215023655_81" Target="@37" Bounds="200.809633178711,1316.95920025747,251.872088803338,19.135763425089" />
+    <Link Source="18100215023655_81" Target="ADMHIS.APP_RSO_QRY.GET_ANT_FIX" Category="StoredProcedureDeclaration" Bounds="188.323947341372,1276.44577156752,71.1358837089442,26.3245995262271" Label="" LabelBounds="223.147771182024,1274.95983230816,0.0999999999999943,10.6399999999999" />
+    <Link Source="18100215023655_81" Target="Bytel.RSO.Sources.Site.EnsembleKinds.ANT_FIX" Bounds="191.460269582715,1324.74037109375,93.8252109085891,31.4031065438176" />
+    <Link Source="18100215023655_83" Target="18100215023655_34" Category="MasterEnsembleLk" Bounds="341.804290771484,699.304992675781,137.525085449219,2163.85662841797" Label="" LabelBounds="416.423216362233,1344.32,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_83" Target="@43" Bounds="360.825561523438,587.3203125,297.731811523438,101.203918457031" />
+    <Link Source="18100215023655_83" Target="ADMHIS.APP_RSO_QRY.GET_EQPT" Category="StoredProcedureDeclaration" Bounds="360.825561523438,671.338562011719,62.5947875976563,10.5364990234375" Label="" LabelBounds="416.423216362233,661.32,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_83" Target="Bytel.RSO.Sources.Site.EnsembleKinds.EQPT" Bounds="348.169860839844,611.77294921875,132.164184570313,65.5620727539063" />
+    <Link Source="18100215023655_85" Target="18100215023655_83" Category="MasterEnsembleLk" Bounds="182.178192138672,592.304992675781,106.986419677734,81.654052734375" Label="" LabelBounds="229.922147016407,614.928683850383,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_85" Target="@45" Bounds="172.814956665039,491.320007324219,278.987564086914,79.0150146484375" />
+    <Link Source="18100215023655_85" Target="ADMHIS.APP_RSO_QRY.GET_FCT_EQP" Category="StoredProcedureDeclaration" Bounds="183.229690551758,546.137817382813,56.5884399414063,24.1972045898438" Label="" LabelBounds="234.011520749641,536.282466469493,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_85" Target="Bytel.RSO.Sources.Site.EnsembleKinds.FCT_EQP" Bounds="207.049163818359,581.500793457031,69.4136047363281,11.2284545898438" />
+    <Link Source="18100215023655_87" Target="18100215023655_30" Category="MasterEnsembleLk" Bounds="532.307678222656,1118.77722167969,139.02294921875,85.5577392578125" Label="" LabelBounds="598.75923138049,1171.17264607834,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_87" Target="@52" Bounds="552.612548828125,1215.31994628906,267.006591796875,25.3367919921875" />
+    <Link Source="18100215023655_87" Target="ADMBDS.PKG_OS1_SITE.GET_OPR_SITE" Category="StoredProcedureDeclaration" Bounds="521.7080078125,1226.30505371094,85.5494995117188,97.291015625" Label="" LabelBounds="605.419319124537,1323.40571324282,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_87" Target="Bytel.RSO.Sources.Site.EnsembleKinds.OPR_SITE" Bounds="520.744812011719,1226.30505371094,143.691101074219,55.143798828125" />
+    <Link Source="18100215023655_89" Target="18100215023655_30" Category="MasterEnsembleLk" Bounds="515.2490234375,1120.32592773438,163.12939453125,3049.00903320313" Label="" LabelBounds="600.061849391132,3341.32,0,10.64" />
+    <Link Source="18100215023655_89" Target="@40" Bounds="532.893371582031,4191.30517578125,282.326416015625,30.0146484375" />
+    <Link Source="18100215023655_89" Target="ADMHIS.APP_RSO_QRY.GET_COMPTEUR" Category="StoredProcedureDeclaration" Bounds="520.979797363281,4191.30517578125,87.528076171875,64.1728515625" Label="" LabelBounds="603.057980748479,4253.57031802103,0,10.64" />
+    <Link Source="18100215023655_89" Target="Bytel.RSO.Sources.Site.EnsembleKinds.COMPTEUR" Bounds="556.952514648438,4180.31982421875,68.9902954101563,0" />
+    <Link Source="18100215023655_91" Target="18100215023655_30" Category="MasterEnsembleLk" Bounds="524.25830078125,556.304992675781,157.231628417969,527.334777832031" Label="" LabelBounds="601.170562644705,760.23969398357,0.0999999999999091,10.6400000000001" />
+    <Link Source="18100215023655_91" Target="@51" Bounds="525.641357421875,403.110595703125,278.643981933594,131.224426269531" />
+    <Link Source="18100215023655_91" Target="ADMHIS.APP_RSO_QRY.GET_OPERATEUR_SITE" Category="StoredProcedureDeclaration" Bounds="523.492004394531,489.210418701172,84.3839111328125,45.1246032714844" Label="" LabelBounds="602.129622711886,478.987616040598,0,10.64" />
+    <Link Source="18100215023655_91" Target="Bytel.RSO.Sources.Site.EnsembleKinds.OPERATEUR_SITE" Bounds="526.844177246094,443.491394042969,89.6466064453125,90.8436279296875" />
+    <Link Source="18100215023655_93" Target="18100215023655_30" Category="MasterEnsembleLk" Bounds="525.278564453125,1120.32446289063,153.093383789063,2969.01049804688" Label="" LabelBounds="600.110374920735,3127.85924515446,0,10.64" />
+    <Link Source="18100215023655_93" Target="@39" Bounds="526.660278320313,4026.23168945313,302.883911132813,63.103271484375" />
+    <Link Source="18100215023655_93" Target="ADMHIS.APP_RSO_QRY.GET_BAIL" Category="StoredProcedureDeclaration" Bounds="542.715881347656,4082.49145507813,65.2686157226563,11.67236328125" Label="" LabelBounds="600.061849391132,4073.25943283461,0,10.64" />
+    <Link Source="18100215023655_93" Target="Bytel.RSO.Sources.Site.EnsembleKinds.BAIL" Bounds="542.701904296875,4108.59423828125,95.9234619140625,16.62548828125" />
+    <Link Source="18100215023655_95" Target="18100215023655_30" Category="MasterEnsembleLk" Bounds="519.326232910156,840.304992675781,163.158569335938,243.135437011719" Label="" LabelBounds="598.211483056972,923.513512813771,0.0999999999999091,10.6400000000001" />
+    <Link Source="18100215023655_95" Target="@36" Bounds="534.117614746094,733.310729980469,292.985229492188,85.0242919921875" />
+    <Link Source="18100215023655_95" Target="ADMHIS.APP_RSO_QRY.GET_ANFR" Category="StoredProcedureDeclaration" Bounds="528.242492675781,661.920349121094,89.332275390625,156.414672851563" Label="" LabelBounds="611.223770880804,656.987323383775,0.0999999999999091,10.6400000000001" />
+    <Link Source="18100215023655_95" Target="Bytel.RSO.Sources.Site.EnsembleKinds.ANFR" Bounds="528.929748535156,697.926940917969,107.589904785156,120.408081054688" />
+    <Link Source="18100215023655_97" Target="@42" Bounds="373.000579833984,348.033966064453,282.925750732422,85.0620422363281" />
+    <Link Source="18100215023655_97" Target="ADMHIS.APP_RSO_QRY.GET_DOMAINS" Category="StoredProcedureDeclaration" Bounds="345.510711669922,369.063659667969,108.285003662109,54.2713317871094" Label="" LabelBounds="416.525410660584,375.528646513761,0.0999999999999091,10.6399999999999" />
+    <Link Source="18100215023655_97" Target="Bytel.RSO.Sources.Site.EnsembleKinds.DOMAINES" Bounds="373.000579833984,418.379028320313,76.5431213378906,11.1985778808594" />
+    <Link Source="18100215023655_99" Target="18100215023655_97" Category="MasterEnsembleLk" Bounds="183.406967163086,393.304992675781,84.0221099853516,32.6836853027344" Label="" LabelBounds="233.877466990559,418.027892982056,0,10.64" />
+    <Link Source="18100215023655_99" Target="@42" Bounds="172.42431640625,292.320007324219,481.19677734375,79.0149841308594" />
+    <Link Source="18100215023655_99" Target="ADMHIS.APP_RSO_QRY.GET_DOMAINS" Category="StoredProcedureDeclaration" Bounds="214.762496948242,356.030914306641,208.638900756836,25.6344604492188" Label="" LabelBounds="259.165356238877,377.605825717393,0,10.64" />
+    <Link Source="18100215023655_99" Target="Bytel.RSO.Sources.Site.EnsembleKinds.SDOMAINES" Bounds="187.646591186523,345.559844970703,73.0204620361328,25.775146484375" />
+    <Link Source="@27" Target="18100215023655_25" Category="InstantiationLink" Bounds="1185.62292480469,72.3199996948242,22.6875,0" Label="" LabelBounds="1201.41661544893,72.3199999999999,0,10.64" />
+    <Link Source="@28" Target="18100215023655_101" Category="InstantiationLink" Bounds="40.3068504333496,1.32000005245209,439.908908843994,1150.99994623661" Label="" LabelBounds="232.784583333333,1.31999999999994,0.0999999999999091,10.6399999999999" />
+    <Link Source="@28" Target="18100215023655_103" Category="InstantiationLink" Bounds="79.3733367919922,1169.00646972656,410.622177124023,100.176147460938" Label="" LabelBounds="235.727421592596,1184.05866447115,0.0999999999999091,10.6399999999999" />
+    <Link Source="@28" Target="18100215023655_108" Category="InstantiationLink" Bounds="48.5989570617676,1045.86743164063,249.61869430542,106.452514648438" Label="" LabelBounds="163.975833333333,1084.32,0.0999999999999091,10.6399999999999" />
+    <Link Source="@28" Target="18100215023655_110" Category="InstantiationLink" Bounds="42.4593467712402,919.797729492188,64.2769966125488,232.522216796875" Label="" LabelBounds="108.885578462561,905.325469333816,0.0999999999999091,10.6399999999999" />
+    <Link Source="@28" Target="18100215023655_112" Category="InstantiationLink" Bounds="42.0228996276855,866.248962402344,63.565845489502,286.070983886719" Label="" LabelBounds="106.28288443011,853.547923467993,0.0999999999999091,10.6399999999999" />
+    <Link Source="@28" Target="18100215023655_27" Category="InstantiationLink" Bounds="40.6014556884766,197.805633544922,116.647964477539,954.514312744141" Label="" LabelBounds="99.0773764781766,366.171924469463,0.0999999999999091,10.6399999999999" />
+    <Link Source="@28" Target="18100215023655_29" Category="InstantiationLink" Bounds="40.5173416137695,122.609313964844,105.893531799316,1029.71063232422" Label="" LabelBounds="93.7758220183259,316.805353100468,0.0999999999999091,10.6399999999999" />
+    <Link Source="@28" Target="18100215023655_30" Category="InstantiationLink" Bounds="58.1968040466309,1116.53686523438,597.673313140869,42.643310546875" Label="" LabelBounds="322.295187149587,1140.89751510066,0.0999999999999091,10.6399999999999" />
+    <Link Source="@28" Target="18100215023655_34" Category="InstantiationLink" Bounds="40.0935974121094,1178.31994628906,444.16748046875,1761.00012207031" Label="" LabelBounds="234.250086536223,2935.65153017509,0,10.64" />
+    <Link Source="@28" Target="18100215023655_37" Category="InstantiationLink" Bounds="45.555736541748,896.440307617188,433.508655548096,255.879638671875" Label="" LabelBounds="230.149617584558,1033.69032712081,0.0999999999999091,10.6399999999999" />
+    <Link Source="@28" Target="18100215023655_39" Category="InstantiationLink" Bounds="40.0140571594238,1178.31994628906,273.167461395264,2546.34924316406" Label="" LabelBounds="231.200590648441,3591.14949192326,0,10.64" />
+    <Link Source="@28" Target="18100215023655_44" Category="InstantiationLink" Bounds="40.0214958190918,1178.31994628906,274.789569854736,2301.02600097656" Label="" LabelBounds="163.975833333333,3321.32,0,10.64" />
+    <Link Source="@28" Target="18100215023655_49" Category="InstantiationLink" Bounds="41.5715103149414,1178.31994628906,279.88939666748,1245.12902832031" Label="" LabelBounds="163.975833333333,1548.32,0.0999999999999091,10.6399999999999" />
+    <Link Source="@28" Target="18100215023655_54" Category="InstantiationLink" Bounds="41.848030090332,1178.31994628906,278.800132751465,755.193603515625" Label="" LabelBounds="163.975833333333,1499.32,0.0999999999999091,10.6399999999999" />
+    <Link Source="@28" Target="18100215023655_59" Category="InstantiationLink" Bounds="42.2196311950684,1178.31994628906,265.706882476807,350.511108398438" Label="" LabelBounds="163.975833333333,1450.32,0.0999999999999091,10.6399999999999" />
+    <Link Source="@28" Target="18100215023655_64" Category="InstantiationLink" Bounds="42.7455444335938,1178.31994628906,233.858642578125,273.596923828125" Label="" LabelBounds="158.141506668722,1411.44325470432,0.0999999999999091,10.6399999999999" />
+    <Link Source="@28" Target="18100215023655_69" Category="InstantiationLink" Bounds="40.0292854309082,1178.31994628906,235.181285858154,2094.00012207031" Label="" LabelBounds="182.808410102758,3257.02658358294,0,10.64" />
+    <Link Source="@28" Target="18100215023655_74" Category="InstantiationLink" Bounds="41.8578414916992,1178.31994628906,255.539741516113,1301.58435058594" Label="" LabelBounds="113.74456198497,1605.70930172135,0.0999999999999091,10.6399999999999" />
+    <Link Source="@28" Target="18100215023655_79" Category="InstantiationLink" Bounds="39.9461555480957,1178.31994628906,231.386089324951,2769.00012207031" Label="" LabelBounds="117.073615071757,3600.56515554486,0,10.64" />
+    <Link Source="@28" Target="18100215023655_81" Category="InstantiationLink" Bounds="50.104589484014,1178.31994628906,94.1037424479956,117.427329453567" Label="" LabelBounds="98.7171482742419,1225.14290948446,0.0999999999999943,10.6399999999999" />
+    <Link Source="@28" Target="18100215023655_83" Category="InstantiationLink" Bounds="41.2767448425293,692.84375,238.250385284424,459.476196289063" Label="" LabelBounds="163.975833333333,711.32,0.0999999999999091,10.6399999999999" />
+    <Link Source="@28" Target="18100215023655_85" Category="InstantiationLink" Bounds="41.0372657775879,597.560791015625,100.41263961792,554.759155273438" Label="" LabelBounds="100.812894861769,622.232672064764,0.0999999999999091,10.6399999999999" />
+    <Link Source="@28" Target="18100215023655_87" Category="InstantiationLink" Bounds="79.3733367919922,1165.85314941406,375.664413452148,43.020751953125" Label="" LabelBounds="140.409701722277,1171.53649365593,0.0999999999999091,10.6399999999999" />
+    <Link Source="@28" Target="18100215023655_89" Category="InstantiationLink" Bounds="39.9318771362305,1178.31994628906,410.854225158691,2992.11560058594" Label="" LabelBounds="228.921717942661,4131.79401208137,0,10.64" />
+    <Link Source="@28" Target="18100215023655_91" Category="InstantiationLink" Bounds="41.1421012878418,560.642211914063,439.291492462158,591.677734375" Label="" LabelBounds="231.465773357234,656.164192934622,0.0999999999999091,10.6399999999999" />
+    <Link Source="@28" Target="18100215023655_93" Category="InstantiationLink" Bounds="39.9360275268555,1178.31994628906,424.975074768066,2917.79919433594" Label="" LabelBounds="231.554796329926,4073.01987048188,0,10.64" />
+    <Link Source="@28" Target="18100215023655_95" Category="InstantiationLink" Bounds="42.9531631469727,846.829650878906,448.703392028809,305.490295410156" Label="" LabelBounds="232.123135985743,938.212064074201,0.0999999999999091,10.6399999999999" />
+    <Link Source="@28" Target="18100215023655_97" Category="InstantiationLink" Bounds="40.7150077819824,441.559448242188,226.663257598877,710.760498046875" Label="" LabelBounds="163.975833333333,463.32,0.0999999999999091,10.6399999999999" />
+    <Link Source="@28" Target="18100215023655_99" Category="InstantiationLink" Bounds="40.6615409851074,398.034484863281,97.9220924377441,754.285461425781" Label="" LabelBounds="99.4361058132608,415.581647310971,0.0999999999999091,10.6399999999999" />
+    <Link Source="@29" Target="@30" Category="InstantiationLink" Bounds="1763.03564453125,26,81.27392578125,36.5389099121094" Label="" LabelBounds="1830.19646297486,58.8996335919628,0.0999999999999091,10.6400000000001" />
+    <Link Source="@29" Target="@33" Category="InstantiationLink" Bounds="1813.34655761719,13,22.6875,0" Label="" LabelBounds="1829.14024847783,13,0.0999999999999091,10.6400000000001" />
+    <Link Source="@30" Target="@31" Category="InstantiationLink" Bounds="1929.92736816406,69,49.879150390625,0" Label="" LabelBounds="1953.7944151445,69,0.0999999999999091,10.6400000000001" />
+    <Link Source="@31" Target="@32" Category="InstantiationLink" Bounds="2086.4130859375,69,41.805908203125,0" Label="" LabelBounds="2121.32524847783,69,0.0999999999999091,10.6400000000001" />
+    <Link Source="@33" Target="@34" Category="InstantiationLink" Bounds="1938.00061035156,13,22.6875,0" Label="" LabelBounds="1953.7944151445,13,0.0999999999999091,10.6400000000001" />
+    <Link Source="ADMBDS.PKG_OS1_SITE.GET_OPR_SITE" Target="@52" Category="InitialEnsembleSource" Bounds="753.373840332031,1263.26916503906,77.9874877929688,27.048583984375" Label="" LabelBounds="785.477149086698,1268.52594844197,0.0999999999999091,10.6399999999999" />
+    <Link Source="ADMBDS.PKG_OS1_SITE.SEARCH_COMMUNE" Target="(@1 @35 Type=SEARCH_COMMUNE)" Category="InitialEnsembleSource" Bounds="2415.5400390625,21.002233505249,22.6875,0" Label="" LabelBounds="2431.33388150673,21.0022331811162,0.0999999999999091,10.6400000000001" />
+    <Link Source="ADMHIS.APP_RSO_QRY.GET_ANFR" Target="@36" Category="InitialEnsembleSource" Bounds="730.445495605469,656.322204589844,115.752502441406,64.6112060546875" Label="" LabelBounds="785.477149086698,676.427926726204,0.0999999999999091,10.6400000000001" />
+    <Link Source="ADMHIS.APP_RSO_QRY.GET_ANT_FIX" Target="@37" Category="InitialEnsembleSource" Bounds="400.629455566406,1248.67041015625,73.251220703125,74.662353515625" Label="" LabelBounds="410.757485633683,1241.57397798226,0.0999999999999091,10.6399999999999" />
+    <Link Source="ADMHIS.APP_RSO_QRY.GET_ANT_PHY" Target="@38" Category="InitialEnsembleSource" Bounds="584.268127441406,3974.25537109375,50.7764892578125,3.80322265625" Label="" LabelBounds="600.079479730919,3965.53687961068,0,10.64" />
+    <Link Source="ADMHIS.APP_RSO_QRY.GET_BAIL" Target="@39" Category="InitialEnsembleSource" Bounds="768.795043945313,4057.6923828125,60.6836547851563,4.275146484375" Label="" LabelBounds="785.477149086697,4050.14870827727,0,10.64" />
+    <Link Source="ADMHIS.APP_RSO_QRY.GET_COMPTEUR" Target="@40" Category="InitialEnsembleSource" Bounds="768.795043945313,4237.83837890625,69.6612548828125,23.490234375" Label="" LabelBounds="784.765268866965,4257.77192889986,0,10.64" />
+    <Link Source="ADMHIS.APP_RSO_QRY.GET_COQUE" Target="@41" Category="InitialEnsembleSource" Bounds="584.268127441406,3299.72534179688,90.4356689453125,75.983642578125" Label="" LabelBounds="595.480526890392,3293.45676277073,0,10.64" />
+    <Link Source="ADMHIS.APP_RSO_QRY.GET_DOMAINS" Target="@42" Category="InitialEnsembleSource" Bounds="584.268127441406,333.093566894531,49.0206298828125,3.072021484375" Label="" LabelBounds="600.094658709764,323.785749723046,0,10.64" />
+    <Link Source="ADMHIS.APP_RSO_QRY.GET_EQPT" Target="@43" Category="InitialEnsembleSource" Bounds="531.706970214844,573.920166015625,111.500671386719,64.3975830078125" Label="" LabelBounds="603.394644473497,573.70611445895,0.0999999999999091,10.6400000000001" />
+    <Link Source="ADMHIS.APP_RSO_QRY.GET_EQPT_NONPOS" Target="@44" Category="InitialEnsembleSource" Bounds="557.994689941406,991.516052246094,114.601806640625,55.2921752929688" Label="" LabelBounds="596.930432773809,1045.75005048012,0.0999999999999091,10.6399999999999" />
+    <Link Source="ADMHIS.APP_RSO_QRY.GET_FCT_EQP" Target="@45" Category="InitialEnsembleSource" Bounds="400.629455566406,507.838500976563,68.7729187011719,23.330810546875" Label="" LabelBounds="415.717264024767,527.80249250929,0.0999999999999091,10.6399999999999" />
+    <Link Source="ADMHIS.APP_RSO_QRY.GET_IMPLANTATION" Target="@46" Category="InitialEnsembleSource" Bounds="768.795043945313,1457.31994628906,38.2364501953125,0" Label="" LabelBounds="785.477149086698,1457.32,0.0999999999999091,10.6399999999999" />
+    <Link Source="ADMHIS.APP_RSO_QRY.GET_LIEU" Target="@47" Category="InitialEnsembleSource" Bounds="584.268127441406,3603.32006835938,60.7763671875,0" Label="" LabelBounds="600.061849391132,3603.32,0,10.64" />
+    <Link Source="ADMHIS.APP_RSO_QRY.GET_LINKS" Target="@48" Category="InitialEnsembleSource" Bounds="768.795043945313,872.780090332031,57.9631958007813,10.5725708007813" Label="" LabelBounds="785.440595682716,881.073059669966,0.0999999999999091,10.6400000000001" />
+    <Link Source="ADMHIS.APP_RSO_QRY.GET_LST_ELM_POS" Target="@49" Category="InitialEnsembleSource" Bounds="400.629455566406,782.307189941406,41.2818908691406,4.47906494140625" Label="" LabelBounds="416.423216362233,774.32,0.0999999999999091,10.6399999999999" />
+    <Link Source="ADMHIS.APP_RSO_QRY.GET_NODES" Target="@50" Category="InitialEnsembleSource" Bounds="723.823303222656,2826.322265625,126.881042480469,85.9501953125" Label="" LabelBounds="785.477149086697,2868.12088194928,0,10.64" />
+    <Link Source="ADMHIS.APP_RSO_QRY.GET_OPERATEUR_SITE" Target="@51" Category="InitialEnsembleSource" Bounds="730.445495605469,419.706573486328,115.752502441406,64.6112060546875" Label="" LabelBounds="785.477149086698,442.932073273795,0.0999999999999091,10.6400000000001" />
+    <Link Source="ADMHIS.APP_RSO_QRY.GET_REGIONS" Target="@53" Category="InitialEnsembleSource" Bounds="768.795043945313,94.3688583374023,51.080322265625,3.5986328125" Label="" LabelBounds="785.477149086698,86.1487082772749,0,10.64" />
+    <Link Source="ADMHIS.APP_RSO_QRY.GET_SITE" Target="@54" Category="InitialEnsembleSource" Bounds="953.322021484375,1129.52465820313,22.7085571289063,1.5556640625" Label="" LabelBounds="969.115782115597,1130.61001102988,0.0999999999999091,10.6399999999999" />
+    <Link Source="ADMHIS.APP_RSO_QRY.GET_SOUS_LIEU" Target="@55" Category="InitialEnsembleSource" Bounds="544.371643066406,1808.98767089844,130.616638183594,123.330078125" Label="" LabelBounds="608.313563961804,1869.41771340372,0.0999999999999091,10.6399999999999" />
+    <Link Source="ADMHIS.APP_RSO_QRY.GET_VALEUR" Target="@56" Category="InitialEnsembleSource" Bounds="1511.85229492188,77.2738571166992,22.7066650390625,1.48054504394531" Label="" LabelBounds="1527.64608181116,78.306925206928,0.0999999999999091,10.6400000000001" />
+    <Link Source="ADMHIS.APP_RSO_QRY.SEARCH_SITE_IMP" Target="@57" Category="InitialEnsembleSource" Bounds="400.629455566406,65.2113952636719,69.0645446777344,23.5626525878906" Label="" LabelBounds="416.423216362233,58.1458457207975,0,10.64" />
+    <Link Source="ADMHIS.APP_RSO_QRY.SEARCH_SITE_SIT" Target="@58" Category="InitialEnsembleSource" Bounds="373.474426269531,177.876586914063,96.3316345214844,41.4411773681641" Label="" LabelBounds="416.423216362232,190.18,0,10.64" />
+  </Links>
+  <Categories>
+    <Category Id="CodeSchema_Class" Label="Classe" BasedOn="CodeSchema_Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" NavigationActionLabel="Classes" />
+    <Category Id="CodeSchema_Type" Label="Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" NavigationActionLabel="Types" />
+    <Category Id="DbObject" />
+    <Category Id="EnsembleClass" />
+    <Category Id="EnsembleIdNode" />
+    <Category Id="EnsembleInstantiationNode" />
+    <Category Id="InitialEnsembleSource" />
+    <Category Id="InstantiationLink" />
+    <Category Id="MasterEnsembleLk" />
+    <Category Id="ObjectIdNode" />
+    <Category Id="StoredProcedureDeclaration" />
+    <Category Id="UiClassNode" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPublic" Label="Est public" Description="Indicateur qui spécifie que la portée est publique" DataType="System.Boolean" />
+    <Property Id="CommonLabel" DataType="System.String" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="Icon" Label="Icône" Description="Icône" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="Label" Label="Étiquette" Description="Étiquette affichable d'un objet pouvant être annoté" DataType="System.String" />
+    <Property Id="LabelBounds" DataType="System.Windows.Rect" />
+    <Property Id="Language" Label="Langage" Description="Langage" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="SourceLocation" Label="Numéro de la ligne de début" DataType="Microsoft.VisualStudio.GraphModel.CodeSchema.SourceLocation" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+    <Name Id="Namespace" Label="Espace de noms" ValueType="System.String" />
+    <Name Id="Type" Label="Type" ValueType="System.Object" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(adff5a07-75ca-4654-84f5-bfdc5d44298e.OutputPathUri)" />
+    <Alias n="26" Id="(@1 Namespace=Bytel.RSO.Sources.Commons.Services Type=DmAppService)" />
+    <Alias n="27" Id="(@1 Namespace=Bytel.RSO.Sources.Global Type=DmGlobal)" />
+    <Alias n="28" Id="(@1 Namespace=Bytel.RSO.Sources.Site Type=DmSite)" />
+    <Alias n="29" Id="(@1 Namespace=Bytel.RSO.Sources Type=ApplicationManager)" />
+    <Alias n="30" Id="(@1 Namespace=Bytel.RSO.Sources.Site.Forms Type=FmSite)" />
+    <Alias n="31" Id="(@1 Namespace=Bytel.RSO.Sources.Site.Frames Type=FrSiteDock)" />
+    <Alias n="32" Id="(@1 Namespace=Bytel.RSO.Sources.Site.Frames Type=FrSiteMap)" />
+    <Alias n="33" Id="(@1 Namespace=Bytel.RSO.Sources.Site.Forms Type=FmDetails)" />
+    <Alias n="34" Id="(@1 Namespace=Bytel.RSO.Sources.Site.Frames Type=FrSitePageControl)" />
+    <Alias n="35" Id="Namespace=Bytel.RSO.Sources.Site.DefBDD" />
+    <Alias n="36" Id="(@1 @35 Type=GET_ANFR)" />
+    <Alias n="37" Id="(@1 @35 Type=GET_ANT_FIX)" />
+    <Alias n="38" Id="(@1 @35 Type=GET_ANT_PHY)" />
+    <Alias n="39" Id="(@1 @35 Type=GET_BAIL)" />
+    <Alias n="40" Id="(@1 @35 Type=GET_COMPTEUR)" />
+    <Alias n="41" Id="(@1 @35 Type=GET_COQUE)" />
+    <Alias n="42" Id="(@1 @35 Type=GET_DOMAINS)" />
+    <Alias n="43" Id="(@1 @35 Type=GET_EQPT)" />
+    <Alias n="44" Id="(@1 @35 Type=GET_EQPT_NONPOS)" />
+    <Alias n="45" Id="(@1 @35 Type=GET_FCT_EQP)" />
+    <Alias n="46" Id="(@1 @35 Type=GET_IMPLANTATION)" />
+    <Alias n="47" Id="(@1 @35 Type=GET_LIEU)" />
+    <Alias n="48" Id="(@1 @35 Type=GET_LINKS)" />
+    <Alias n="49" Id="(@1 @35 Type=GET_LST_ELM_POS)" />
+    <Alias n="50" Id="(@1 @35 Type=GET_NODES)" />
+    <Alias n="51" Id="(@1 @35 Type=GET_OPERATEUR_SITE)" />
+    <Alias n="52" Id="(@1 @35 Type=GET_OPR_SITE)" />
+    <Alias n="53" Id="(@1 @35 Type=GET_REGIONS)" />
+    <Alias n="54" Id="(@1 @35 Type=GET_SITE)" />
+    <Alias n="55" Id="(@1 @35 Type=GET_SOUS_LIEU)" />
+    <Alias n="56" Id="(@1 Namespace=Bytel.RSO.Sources.Global.DefBDD Type=GET_VALEUR)" />
+    <Alias n="57" Id="(@1 @35 Type=SEARCH_SITE_IMP)" />
+    <Alias n="58" Id="(@1 @35 Type=SEARCH_SITE_SIT)" />
+  </IdentifierAliases>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Procédure stockée" ValueLabel="c">
+      <Condition Expression="HasCategory('DbObject')" />
+      <Setter Property="Icon" Value="pack://application:,,,/Microsoft.VisualStudio.Progression.GraphControl;component/Icons/Script.png" />
+      <Setter Property="Background" Value="#FFC99CC6" />
+      <Setter Property="FontSize" Value="9" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Objet identifiant" ValueLabel="c">
+      <Condition Expression="HasCategory('ObjectIdNode')" />
+      <Setter Property="Background" Value="#f9ff68" />
+      <Setter Property="FontSize" Value="8" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Instanciation d'un ensemble" ValueLabel="c">
+      <Condition Expression="HasCategory('EnsembleInstantiationNode')" />
+      <Setter Property="Background" Value="#f5eaff" />
+      <Setter Property="FontSize" Value="9" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Class ensemble" ValueLabel="c">
+      <Condition Expression="HasCategory('EnsembleClass')" />
+      <Setter Property="Stroke" Value="#ceb3e5" />
+      <Setter Property="FontSize" Value="9" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Déclaration de procédure stockée" ValueLabel="c">
+      <Condition Expression="HasCategory('StoredProcedureDeclaration')" />
+      <Setter Property="StrokeThickness" Value="0.5" />
+      <Setter Property="Stroke" Value="#ceb3e5" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Instanciation" ValueLabel="c">
+      <Condition Expression="HasCategory('InstantiationLink')" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="FontSize" Value="8" />
+      <Setter Property="Stroke" Value="#4286f4" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="MasterEnsembleLk" ValueLabel="c">
+      <Condition Expression="HasCategory('MasterEnsembleLk')" />
+      <Setter Property="StrokeThickness" Value="0.5" />
+      <Setter Property="FontSize" Value="8" />
+      <Setter Property="Stroke" Value="#d742f4" />
+      <Setter Property="StrokeDashArray" Value="2,1,3,2" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Tous les liens" ValueLabel="Tous les liens">
+      <Setter Property="FontSize" Value="8" />
+      <Setter Property="FontStyle" Value="Italic" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Commentaire" ValueLabel="Possède un commentaire">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="200" />
+      <Setter Property="FontSize" Value="8" />
+    </Style>
+  </Styles>
+  <Paths>
+    <Path Id="adff5a07-75ca-4654-84f5-bfdc5d44298e.OutputPath" Value="P:\SVN_IOR_ECO\RSO\RSO\bin\Debug\RSO.exe" />
+    <Path Id="adff5a07-75ca-4654-84f5-bfdc5d44298e.OutputPathUri" Value="file:///P:/SVN_IOR_ECO/RSO/RSO/bin/Debug/RSO.exe" />
+  </Paths>
+</DirectedGraph>

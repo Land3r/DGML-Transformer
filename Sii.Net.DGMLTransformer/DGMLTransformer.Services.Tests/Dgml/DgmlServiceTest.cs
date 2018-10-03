@@ -5,21 +5,25 @@
     using System.IO;
     using System.Xml;
     using DgmlLib;
+    using DGMLTransformer.Domain;
     using DGMLTransformer.Services.Dgml;
-    using DGMLTransformer.Transversal.Extensions;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using System.Linq;
 
     [TestClass]
     public class DgmlServiceTest
     {
-        public static IEnumerable<string> DgmlExamplesFilepath { get; private set; } 
+        private static Random random = new Random();
+
+        private static IEnumerable<string> DgmlExamplesFilepath { get; set; } 
         
         [TestInitialize]
         public void Initialize()
         {
             DgmlExamplesFilepath = new List<string>()
             {
-                "./Dgml/Examples/FonctionalGraphPerso.dgml"
+                "./Dgml/Examples/FonctionalGraphPerso.dgml",
+                "./Dgml/Examples/FromDgmlDocApi_181002_150237.dgml"
             };
         }
 
@@ -73,12 +77,14 @@
         {
             DgmlService service = new DgmlService();
             IEnumerator<string> exampleDgmlPathEnumerator = DgmlExamplesFilepath.GetEnumerator();
-            exampleDgmlPathEnumerator.MoveNext();
-            DgmlDoc doc = service.GetFromFile(exampleDgmlPathEnumerator.Current);
-            service.SaveFile(doc);
+            while (exampleDgmlPathEnumerator.MoveNext())
+            {
+                DgmlDoc doc = service.GetFromFile(exampleDgmlPathEnumerator.Current);
+                service.SaveFile(doc);
 
-            DgmlDoc docReopened = service.GetFromFile(exampleDgmlPathEnumerator.Current);
-            Assert.AreEqual<DgmlDoc>(doc, docReopened);
+                DgmlDoc docReopened = service.GetFromFile(exampleDgmlPathEnumerator.Current);
+                Assert.AreEqual<DgmlDoc>(doc, docReopened);
+            }
         }
 
         [TestMethod]
@@ -86,13 +92,15 @@
         {
             DgmlService service = new DgmlService();
             IEnumerator<string> exampleDgmlPathEnumerator = DgmlExamplesFilepath.GetEnumerator();
-            exampleDgmlPathEnumerator.MoveNext();
-            DateTime originalModifiedFileDateTime = File.GetLastWriteTimeUtc(exampleDgmlPathEnumerator.Current);
-            DgmlDoc doc = service.GetFromFile(exampleDgmlPathEnumerator.Current);
-            service.SaveFile(doc);
+            while (exampleDgmlPathEnumerator.MoveNext())
+            {
+                DateTime originalModifiedFileDateTime = File.GetLastWriteTimeUtc(exampleDgmlPathEnumerator.Current);
+                DgmlDoc doc = service.GetFromFile(exampleDgmlPathEnumerator.Current);
+                service.SaveFile(doc);
 
-            DateTime updatedModifiedFileDateTime = File.GetLastWriteTimeUtc(exampleDgmlPathEnumerator.Current);
-            Assert.IsTrue(updatedModifiedFileDateTime - originalModifiedFileDateTime > TimeSpan.MinValue);
+                DateTime updatedModifiedFileDateTime = File.GetLastWriteTimeUtc(exampleDgmlPathEnumerator.Current);
+                Assert.IsTrue(updatedModifiedFileDateTime - originalModifiedFileDateTime > TimeSpan.MinValue);
+            }
         }
 
         [TestMethod]
@@ -100,14 +108,17 @@
         {
             DgmlService service = new DgmlService();
             IEnumerator<string> exampleDgmlPathEnumerator = DgmlExamplesFilepath.GetEnumerator();
-            exampleDgmlPathEnumerator.MoveNext();
-            DgmlDoc doc = service.GetFromFile(exampleDgmlPathEnumerator.Current);
-            DgmlDoc originalDoc = (DgmlDoc)doc.Clone();
-            doc.ShowAllCategories();
-            originalDoc.HideAllCategories();
-            originalDoc.ShowAllCategories();
+            while (exampleDgmlPathEnumerator.MoveNext())
+            {
+                DgmlDoc doc = service.GetFromFile(exampleDgmlPathEnumerator.Current);
+                DgmlDoc originalDoc = (DgmlDoc)doc.Clone();
 
-            Assert.AreEqual<DgmlDoc>(doc, originalDoc);
+                service.ShowAllCategories(doc);
+                service.HideAllCategories(originalDoc);
+                service.ShowAllCategories(originalDoc);
+
+                Assert.AreEqual<DgmlDoc>(doc, originalDoc);
+            }
         }
 
         [TestMethod]
@@ -115,14 +126,71 @@
         {
             DgmlService service = new DgmlService();
             IEnumerator<string> exampleDgmlPathEnumerator = DgmlExamplesFilepath.GetEnumerator();
-            exampleDgmlPathEnumerator.MoveNext();
-            DgmlDoc doc = service.GetFromFile(exampleDgmlPathEnumerator.Current);
-            DgmlDoc originalDoc = (DgmlDoc)doc.Clone();
-            doc.HideAllCategories();
-            originalDoc.ShowAllCategories();
-            originalDoc.HideAllCategories();
+            while (exampleDgmlPathEnumerator.MoveNext())
+            {
+                DgmlDoc doc = service.GetFromFile(exampleDgmlPathEnumerator.Current);
+                DgmlDoc originalDoc = (DgmlDoc)doc.Clone();
 
-            Assert.AreEqual<DgmlDoc>(doc, originalDoc);
+                service.HideAllCategories(doc);
+                service.ShowAllCategories(originalDoc);
+                service.HideAllCategories(originalDoc);
+
+                Assert.AreEqual<DgmlDoc>(doc, originalDoc);
+            }
+        }
+
+        [TestMethod]
+        public void DgmlService_HideCategories_SimulateAllChangesShouldWork()
+        {
+            DgmlService service = new DgmlService();
+            IEnumerator<string> exampleDgmlPathEnumerator = DgmlExamplesFilepath.GetEnumerator();
+            while (exampleDgmlPathEnumerator.MoveNext())
+            {
+                DgmlDoc doc = service.GetFromFile(exampleDgmlPathEnumerator.Current);
+                DgmlDoc originalDoc = (DgmlDoc)doc.Clone();
+
+                IList<DgmlCategory> dgmlCategories = doc.Categories.Select(p => new DgmlCategory() { Id = p.Id, Label = p.Label }).ToList();
+                service.HideAllCategories(doc);
+                service.HideCategories(originalDoc, dgmlCategories);
+
+                Assert.AreEqual<DgmlDoc>(doc, originalDoc);
+            }
+        }
+
+        [TestMethod]
+        public void DgmlService_HideCategory_SimulateChangesShouldWork()
+        {
+            DgmlService service = new DgmlService();
+            IEnumerator<string> exampleDgmlPathEnumerator = DgmlExamplesFilepath.GetEnumerator();
+            while (exampleDgmlPathEnumerator.MoveNext())
+            {
+                DgmlDoc doc = service.GetFromFile(exampleDgmlPathEnumerator.Current);
+                DgmlDoc originalDoc = (DgmlDoc)doc.Clone();
+
+                IList<DgmlCategory> dgmlCategories = doc.Categories.Select(p => new DgmlCategory() { Id = p.Id, Label = p.Label }).ToList();
+                service.HideAllCategories(doc);
+                service.HideCategories(originalDoc, dgmlCategories);
+
+                Assert.AreEqual<DgmlDoc>(doc, originalDoc);
+            }
+        }
+
+        [TestMethod]
+        public void DgmlService_HideCategories_SimulateChangesShouldWork()
+        {
+            DgmlService service = new DgmlService();
+            IEnumerator<string> exampleDgmlPathEnumerator = DgmlExamplesFilepath.GetEnumerator();
+            while (exampleDgmlPathEnumerator.MoveNext())
+            {
+                DgmlDoc doc = service.GetFromFile(exampleDgmlPathEnumerator.Current);
+                DgmlDoc originalDoc = (DgmlDoc)doc.Clone();
+
+                IList<DgmlCategory> dgmlCategories = doc.Categories.Select(p => new DgmlCategory() { Id = p.Id, Label = p.Label }).ToList();
+                int categoryIndex = random.Next(dgmlCategories.Count);
+                
+                service.HideCategory(doc, dgmlCategories[categoryIndex]);
+                Assert.AreEqual<DgmlDoc>(doc, originalDoc);
+            }
         }
     }
 }

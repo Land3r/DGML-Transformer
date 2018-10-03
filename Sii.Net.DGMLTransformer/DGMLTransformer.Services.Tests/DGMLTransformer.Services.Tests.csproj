@@ -55,7 +55,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Dgml\Examples\FonctionalGraphPerso.dgml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Dgml\Examples\FromDgmlDocApi_181002_150237.dgml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
@@ -68,6 +71,10 @@
     <ProjectReference Include="..\DgmlLib\DgmlLib.csproj">
       <Project>{3A49C4CB-91A4-40E1-8C13-1D94D843FC05}</Project>
       <Name>DgmlLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DgmlTransformer.Domain\DgmlTransformer.Domain.csproj">
+      <Project>{E2347971-FFB9-445D-81ED-CC0A78E41BA4}</Project>
+      <Name>DgmlTransformer.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\DGMLTransformer.Services\DGMLTransformer.Services.csproj">
       <Project>{0106108d-d643-4a65-b709-f80b8da297d4}</Project>

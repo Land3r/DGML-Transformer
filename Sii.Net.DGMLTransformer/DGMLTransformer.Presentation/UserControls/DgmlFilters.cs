@@ -41,6 +41,7 @@ namespace DGMLTransformer.Presentation.UserControls
         /// </summary>
         private void FillCheckedListView(IList<DgmlCategory> dgmlCategories)
         {
+            this.DgmlCategoryCheckedListView.Items.Clear();
             IList<ListViewItem> dgmlCategoryList = dgmlCategories.OrderBy(p => p.Label).Select(p => new ListViewItem() {Name = p.Id, Text = p.Label }).ToList();
             foreach (ListViewItem category in dgmlCategoryList)
             {

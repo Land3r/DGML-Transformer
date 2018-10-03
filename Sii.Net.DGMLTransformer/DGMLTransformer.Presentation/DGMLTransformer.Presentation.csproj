@@ -83,8 +83,6 @@
     <Compile Include="MainWindow.Designer.cs">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\DgmlFile.cs" />
-    <Compile Include="Models\DgmlCategory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserControls\DgmlFilters.cs">
@@ -150,6 +148,10 @@
     <ProjectReference Include="..\DgmlLib\DgmlLib.csproj">
       <Project>{3A49C4CB-91A4-40E1-8C13-1D94D843FC05}</Project>
       <Name>DgmlLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DgmlTransformer.Domain\DgmlTransformer.Domain.csproj">
+      <Project>{E2347971-FFB9-445D-81ED-CC0A78E41BA4}</Project>
+      <Name>DgmlTransformer.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\DGMLTransformer.Services\DGMLTransformer.Services.csproj">
       <Project>{0106108D-D643-4A65-B709-F80B8DA297D4}</Project>

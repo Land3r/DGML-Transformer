@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DGMLTransformer.Presentation.Models;
 using DGMLTransformer.Presentation.Events;
+using DGMLTransformer.Domain;
 
 namespace DGMLTransformer.Presentation.UserControls
 {

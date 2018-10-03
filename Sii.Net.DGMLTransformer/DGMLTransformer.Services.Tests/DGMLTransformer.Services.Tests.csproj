@@ -73,6 +73,10 @@
       <Project>{0106108d-d643-4a65-b709-f80b8da297d4}</Project>
       <Name>DGMLTransformer.Services</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DGMLTransformer.Transversal\DGMLTransformer.Transversal.csproj">
+      <Project>{485edcf5-0f38-456f-9a92-0a035d51b4ef}</Project>
+      <Name>DGMLTransformer.Transversal</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

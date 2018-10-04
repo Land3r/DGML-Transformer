@@ -10,7 +10,7 @@ namespace DGMLTransformer.Services.Dgml
         DgmlDoc HideAllCategories(DgmlDoc doc);
         DgmlDoc HideCategory(DgmlDoc doc, DgmlCategory dgmlCategory);
         DgmlDoc HideCategories(DgmlDoc doc, IList<DgmlCategory> dgmlCategories);
-        void SaveFile(DgmlDoc dgmlDoc);
+        void SaveFile(DgmlDoc dgmlDoc, bool backup);
         DgmlDoc ShowAllCategories(DgmlDoc doc);
         DgmlDoc ShowCategories(DgmlDoc doc, IList<DgmlCategory> dgmlCategories);
     }

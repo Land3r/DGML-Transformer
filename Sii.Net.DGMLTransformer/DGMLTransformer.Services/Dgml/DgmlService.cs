@@ -36,9 +36,9 @@
         /// Saves the <see cref="DgmlDoc"/> on the current file.
         /// </summary>
         /// <param name="dgmlDoc">The <see cref="DgmlDoc"/> to save.</param>
-        public void SaveFile(DgmlDoc dgmlDoc)
+        public void SaveFile(DgmlDoc dgmlDoc, bool backup = false)
         {
-            dgmlDoc.SaveOnCurrentFile();
+            dgmlDoc.SaveOnCurrentFile(backup);
         }
 
         /// <summary>

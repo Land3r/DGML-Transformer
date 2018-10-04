@@ -76,7 +76,6 @@ namespace DGMLTransformer.Presentation
             this.dgmlFilters = new DgmlFilters();
             this.dgmlFilters.Dock = DockStyle.Fill;
             this.DgmlDocHandler += new EventHandler<DgmlDocEventArgs>(this.dgmlFilters.OnDgmlDocLoaded);
-            this.dgmlSelector.DgmlFileHandler += new EventHandler<DgmlFileEventArgs>(this.dgmlFilters.OnDgmlFileSelected);
 
             this.dgmlGenerator = new DgmlGenerator();
             this.dgmlGenerator.Dock = DockStyle.Fill;
@@ -122,7 +121,7 @@ namespace DGMLTransformer.Presentation
             {
                 dgmlService.HideAllCategories(this.dgmlDoc);
                 dgmlService.ShowCategories(this.dgmlDoc, this.dgmlFilters.DgmlCategories);
-                dgmlService.SaveFile(this.dgmlDoc);
+                dgmlService.SaveFile(this.dgmlDoc, true);
             }
         }
 

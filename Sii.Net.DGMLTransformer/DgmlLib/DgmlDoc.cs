@@ -221,6 +221,63 @@ namespace DgmlLib
             this.InitDocHandling();
         }
         
+        public void Backup(string filePath = null)
+        {
+            string backupFolderPath, backupFilePath;
+            if (string.IsNullOrWhiteSpace(filePath))
+            {
+                IList<string> filePaths = LoadedFilePath.Split('\\');
+                string fileName = filePaths.LastOrDefault();
+                backupFolderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "DgmlBackups");
+                backupFilePath =  Path.Combine(backupFolderPath, fileName);
+            }
+            else
+            {
+                IList<string> filePaths = filePath.Split('\\');
+                string fileName = filePaths.LastOrDefault();
+                filePaths = filePaths.Take(filePaths.Count() - 1).ToArray();
+                backupFolderPath = string.Join("\\", filePaths);
+                backupFilePath = Path.Combine(backupFolderPath, fileName);
+            }
+
+            if (!Directory.Exists(backupFolderPath))
+            {
+                Directory.CreateDirectory(backupFolderPath);
+            }
+            backupFilePath = this.GetNextFileAvailable(backupFilePath);
+
+            XDocument docToSave = XDocument.Parse(_xdoc.ToString().Replace("<DirectedGraph ", "<DirectedGraph xmlns=\"http://schemas.microsoft.com/vs/2009/dgml\" "));
+            docToSave.Save(backupFilePath);
+        }
+
+        private string GetNextFileAvailable(string filePath)
+        {
+            int i = 0;
+            bool availabilityFound = false;
+            string nextFileAvailable = string.Empty;
+
+            IList<string> filePaths = filePath.Split('.');
+            string ext = filePaths.LastOrDefault();
+
+            filePaths = filePaths.Take(filePaths.Count() - 1).ToArray();
+            string fileBasePath = string.Join(string.Empty, filePaths);
+            do
+            {
+                string fileAttempt = string.Format("{0}-{1}.{2}", fileBasePath, i, ext);
+                if (File.Exists(fileAttempt))
+                {
+                    i++;
+                }
+                else
+                {
+                    nextFileAvailable = fileAttempt;
+                    availabilityFound = true;
+                }
+            }
+            while (!availabilityFound);
+            return nextFileAvailable;
+        }
+
         public void Save(string filePath = null)
         {
             if (string.IsNullOrWhiteSpace(filePath))
@@ -237,10 +294,19 @@ namespace DgmlLib
             docToSave.Save(filePath);
         }
         
-        public void SaveOnCurrentFile()
+        public void SaveOnCurrentFile(bool backup = false)
         {
-            this.Save(LoadedFilePath);
+            if (backup == false)
+            {
+                this.Save(LoadedFilePath);
+            }
+            else
+            {
+                this.Backup();
+                this.Save(LoadedFilePath);
+            }
         }
+
 
         /// <summary>
         /// initialiser _aliasCounter en fonction des alias attribués

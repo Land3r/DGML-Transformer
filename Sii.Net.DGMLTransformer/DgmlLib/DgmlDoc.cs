@@ -142,7 +142,7 @@ namespace DgmlLib
             foreach (XNode categorieNode in categoriesElement)
             {
                 categorieElement = (XElement)categorieNode;
-                if (categorieElement.Attribute("Label")?.Value == category.Label)
+                if (categorieElement.Attribute("Id")?.Value == category.Id)
                 {
                     break;
                 }
@@ -187,7 +187,7 @@ namespace DgmlLib
             foreach (XNode categorieNode in categoriesElement)
             {
                 categorieElement = (XElement)categorieNode;
-                if (categorieElement.Attribute("Label")?.Value == category.Label)
+                if (categorieElement.Attribute("Id")?.Value == category.Id)
                 {
                     break;
                 }
